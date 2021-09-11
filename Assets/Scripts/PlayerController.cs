@@ -29,15 +29,16 @@ public class PlayerController : MonoBehaviour
             theRB.velocity = new Vector3(theRB.velocity.x , jumpForce, theRB.velocity.z);
         }*/
 
-        moveDirection = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, 0f, Input.GetAxis("Vertical") * moveSpeed);
+         moveDirection = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, 0f, Input.GetAxis("Vertical") * moveSpeed);
 
-        if (Input.GetButtonDown("Jump"))
+        if (controller.is grounded) ;
         {
-            moveDirection.y = jumpForce;
+            moveDirection.y = 0f;
+            if (Input.GetButtonDown("Jump"))
+            {
+                moveDirection.y = jumpForce;
+            }
         }
-
-
-
         moveDirection.y = moveDirection.y + (Physics.gravity.y * gravityScale );
         controller.Move(moveDirection *Time.deltaTime);
                     
