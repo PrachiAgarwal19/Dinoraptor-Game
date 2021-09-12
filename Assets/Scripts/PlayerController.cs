@@ -13,8 +13,8 @@ public class PlayerController : MonoBehaviour
     public float gravityScale;
       
     public Transform pivot;
-     public float rotateSpeed;
-     public GameObject playerModel;
+    public float rotateSpeed;
+    public GameObject playerModel;
     // Start is called before the first frame update
     void Start()
     {
