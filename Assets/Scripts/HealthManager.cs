@@ -11,6 +11,7 @@ public class HealthManager : MonoBehaviour
     public float invincibilityLength;
     private float invincibilityCounter;
     public Renderer playerRenderer;
+    public Renderer playerRendererSpikes;
     private float flashCounter;
     public float flashLength=0.1f;
 
@@ -34,11 +35,13 @@ public class HealthManager : MonoBehaviour
             if(flashCounter<=0)
             {
                 playerRenderer.enabled = !playerRenderer.enabled;
+                playerRendererSpikes.enabled=!playerRendererSpikes.enabled;
                 flashCounter=flashLength;
             }
 
             if(invincibilityCounter<=0){
                 playerRenderer.enabled=true;
+                playerRendererSpikes.enabled=true;
             }
         }
     }
@@ -54,6 +57,7 @@ public class HealthManager : MonoBehaviour
             invincibilityCounter=invincibilityLength;
 
             playerRenderer.enabled=false;
+            playerRendererSpikes.enabled=false;
 
             flashCounter=flashLength;
         }
