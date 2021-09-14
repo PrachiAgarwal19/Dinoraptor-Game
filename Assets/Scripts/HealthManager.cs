@@ -17,7 +17,10 @@ public class HealthManager : MonoBehaviour
 
     private bool isRespawning;
     private Vector3 respawnPoint;
+<<<<<<< Updated upstream
     public float respawnLength;
+=======
+>>>>>>> Stashed changes
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +28,10 @@ public class HealthManager : MonoBehaviour
         currentHealth = maxHealth;
         
         //thePlayer = FindObjectOfType<PlayerController>();
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
         respawnPoint = thePlayer.transform.position;
     }
 
@@ -55,6 +62,7 @@ public class HealthManager : MonoBehaviour
     {
         if(invincibilityCounter<=0)
         {
+
             currentHealth -= damage;
             if (currentHealth <= 0)
             {
@@ -63,6 +71,16 @@ public class HealthManager : MonoBehaviour
             else
             {
 
+<<<<<<< Updated upstream
+=======
+            if (currentHealth <= 0)
+            {
+                Respawn();
+            }
+            else
+            {
+
+>>>>>>> Stashed changes
                 thePlayer.Knockback(direction);
 
                 invincibilityCounter = invincibilityLength;
@@ -95,7 +113,22 @@ public class HealthManager : MonoBehaviour
         thePlayer.gameObject.SetActive(true);
         currentHealth = maxHealth;
 
+<<<<<<< Updated upstream
     }
+=======
+    public void Respawn()
+    {
+        thePlayer.transform.position = respawnPoint;
+        currentHealth = maxHealth;
+
+    }
+
+    public IEnumerator RepawnCo()
+    {
+
+    }
+
+>>>>>>> Stashed changes
     public void HealPlayer(int healAmount)
     {
         currentHealth += healAmount;
