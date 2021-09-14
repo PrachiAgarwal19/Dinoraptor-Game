@@ -610,6 +610,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83386dc286fcd2a4d840e0bdf6f7115b, type: 3}
+--- !u!137 &771618070 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -6616929805811053650, guid: 6bcc76aebcc27f641a1ba39f7e8e5fe6,
+    type: 3}
+  m_PrefabInstance: {fileID: 983395085}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &896569600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1254,6 +1260,7 @@ MonoBehaviour:
   thePlayer: {fileID: 1879166407}
   invincibilityLength: 5
   playerRenderer: {fileID: 1656347339}
+  playerRendererSpikes: {fileID: 771618070}
   flashLength: 0.2
 --- !u!1001 &1207407754
 PrefabInstance:
