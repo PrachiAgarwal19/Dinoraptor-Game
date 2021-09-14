@@ -15,12 +15,17 @@ public class HealthManager : MonoBehaviour
     private float flashCounter;
     public float flashLength=0.1f;
 
+    private bool isRespawning;
+    private Vector3 respawnPoint;
+    public float respawnLength;
+
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
         
-        thePlayer = FindObjectOfType<PlayerController>();
+        //thePlayer = FindObjectOfType<PlayerController>();
+        respawnPoint = thePlayer.transform.position;
     }
 
     // Update is called once per frame
@@ -51,25 +56,58 @@ public class HealthManager : MonoBehaviour
         if(invincibilityCounter<=0)
         {
             currentHealth -= damage;
+            if (currentHealth <= 0)
+            {
+                respawn();
+            }
+            else
+            {
 
-            thePlayer.Knockback(direction);
+                thePlayer.Knockback(direction);
 
-            invincibilityCounter=invincibilityLength;
+                invincibilityCounter = invincibilityLength;
 
-            playerRenderer.enabled=false;
-            playerRendererSpikes.enabled=false;
+                playerRenderer.enabled = false;
+                playerRendererSpikes.enabled = false;
 
-            flashCounter=flashLength;
+                flashCounter = flashLength;
+            }
         }
         
     }
+    public void respawn()
+    {
+        //thePlayer.transform.position = respawnPoint;
+        //currentHealth = maxHealth;
+        if (!isRespawning)
+        {
 
+
+            StartCorout ine("RespawnCo");
+        }
+    }
+    public IEnumerator Respawnco()
+    {
+        isRespawning = true;
+        thePlayer.gameObject.SetActive(false);
+        yield return new WaitForSeconds(respawnLength);
+        isRespawning = false;
+        thePlayer.gameObject.SetActive(true);
+        currentHealth = maxHealth;
+
+    }
     public void HealPlayer(int healAmount)
     {
         currentHealth += healAmount;
         if (currentHealth >= maxHealth)
         {
             currentHealth = maxHealth;
+            invincibilityCounter = invincibilityLength;
+
+            playerRenderer.enabled = false;
+            playerRendererSpikes.enabled = false;
+
+            flashCounter = flashLength;
         }
     }
 }
