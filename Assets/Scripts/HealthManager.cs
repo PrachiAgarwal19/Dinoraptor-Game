@@ -83,7 +83,7 @@ public class HealthManager : MonoBehaviour
         {
 
 
-            StartCorout ine("RespawnCo");
+            StartCoroutine("RespawnCo");
         }
     }
     public IEnumerator Respawnco()
