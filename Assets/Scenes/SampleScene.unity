@@ -610,6 +610,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 83386dc286fcd2a4d840e0bdf6f7115b, type: 3}
+--- !u!137 &771618070 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -6616929805811053650, guid: 6bcc76aebcc27f641a1ba39f7e8e5fe6,
+    type: 3}
+  m_PrefabInstance: {fileID: 983395085}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &896569600
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -989,8 +995,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd685dcb79dd4754bbb525ea11698e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 0
-  pickupEffect: {fileID: 0}
+  value: 1
+  pickupEffect: {fileID: 5295021317640231211, guid: 7fda59c331009814dbb1de0bd6028474,
+    type: 3}
 --- !u!65 &1058492585
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1221,7 +1228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentGold: 0
-  goldText: {fileID: 0}
+  goldText: {fileID: 1363109789}
 --- !u!4 &1204233640
 Transform:
   m_ObjectHideFlags: 0
@@ -1248,13 +1255,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e31cd13cc1153c4181206c0ab1b88b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 0
+  maxHealth: 5
   currentHealth: 0
-  thePlayer: {fileID: 0}
-  invincibilityLength: 0
-  playerRenderer: {fileID: 0}
-  playerRendererSpikes: {fileID: 0}
-  flashLength: 0.1
+  thePlayer: {fileID: 1879166407}
+  invincibilityLength: 5
+  playerRenderer: {fileID: 1656347339}
+  playerRendererSpikes: {fileID: 771618070}
+  flashLength: 0.2
 --- !u!1001 &1207407754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1372,8 +1379,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd685dcb79dd4754bbb525ea11698e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 0
-  pickupEffect: {fileID: 0}
+  value: 1
+  pickupEffect: {fileID: 5295021317640231211, guid: 7fda59c331009814dbb1de0bd6028474,
+    type: 3}
 --- !u!65 &1207407757
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1504,8 +1512,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd685dcb79dd4754bbb525ea11698e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 0
-  pickupEffect: {fileID: 0}
+  value: 1
+  pickupEffect: {fileID: 5295021317640231211, guid: 7fda59c331009814dbb1de0bd6028474,
+    type: 3}
 --- !u!65 &1239744874
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1636,8 +1645,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd685dcb79dd4754bbb525ea11698e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 0
-  pickupEffect: {fileID: 0}
+  value: 1
+  pickupEffect: {fileID: 5295021317640231211, guid: 7fda59c331009814dbb1de0bd6028474,
+    type: 3}
 --- !u!65 &1284510464
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2084,8 +2094,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd685dcb79dd4754bbb525ea11698e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 0
-  pickupEffect: {fileID: 0}
+  value: 1
+  pickupEffect: {fileID: 5295021317640231211, guid: 7fda59c331009814dbb1de0bd6028474,
+    type: 3}
 --- !u!65 &1419549020
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2192,9 +2203,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1587768345 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 6bcc76aebcc27f641a1ba39f7e8e5fe6,
+--- !u!137 &1656347339 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -6938986035272928436, guid: 6bcc76aebcc27f641a1ba39f7e8e5fe6,
     type: 3}
   m_PrefabInstance: {fileID: 983395085}
   m_PrefabAsset: {fileID: 0}
@@ -2394,11 +2405,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 10
   jumpForce: 20
-  controller: {fileID: 1879166406}
+  controller: {fileID: 0}
   gravityScale: 5
   pivot: {fileID: 1946558577}
   rotateSpeed: 0
-  playerModel: {fileID: 1587768345}
+  playerModel: {fileID: 2077221458}
   knockBackForce: 10
   knockBackTime: 0.5
 --- !u!1 &1902426844 stripped
@@ -2593,8 +2604,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd685dcb79dd4754bbb525ea11698e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 0
-  pickupEffect: {fileID: 0}
+  value: 1
+  pickupEffect: {fileID: 5295021317640231211, guid: 7fda59c331009814dbb1de0bd6028474,
+    type: 3}
 --- !u!65 &1994882932
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2608,6 +2620,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5, z: 0.5}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &2077221458 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 6bcc76aebcc27f641a1ba39f7e8e5fe6,
+    type: 3}
+  m_PrefabInstance: {fileID: 983395085}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2107111376
 GameObject:
   m_ObjectHideFlags: 0
@@ -2932,8 +2950,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd685dcb79dd4754bbb525ea11698e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 0
-  pickupEffect: {fileID: 0}
+  value: 1
+  pickupEffect: {fileID: 5295021317640231211, guid: 7fda59c331009814dbb1de0bd6028474,
+    type: 3}
 --- !u!65 &5255339709752794254
 BoxCollider:
   m_ObjectHideFlags: 0
