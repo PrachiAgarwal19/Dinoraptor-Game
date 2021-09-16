@@ -41,7 +41,7 @@ public class Checkpoint : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag.Equals("Player"))
+        if (other.gameObject.tag.Equals("Player"))
         {
             theHealthMan.setSpawnPoint(transform.position);
             CheckpointOn();
