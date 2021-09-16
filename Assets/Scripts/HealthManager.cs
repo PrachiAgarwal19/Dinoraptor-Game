@@ -108,8 +108,7 @@ public class HealthManager : MonoBehaviour
         if (!isRespawning)
         {
 
-
-            StartCoroutine("RespawnCo");
+            StartCoroutine("Respawnco");
         }
     }
     public IEnumerator Respawnco()
@@ -130,6 +129,7 @@ public class HealthManager : MonoBehaviour
         isRespawning = false;
 
         thePlayer.gameObject.SetActive(true);
+        thePlayer.transform.position = respawnPoint;
         currentHealth = maxHealth;
 
         invincibilityCounter = invincibilityLength;
@@ -139,21 +139,27 @@ public class HealthManager : MonoBehaviour
 
         flashCounter = flashLength;
 
-
-
     }
+
     public void HealPlayer(int healAmount)
     {
         currentHealth += healAmount;
         if (currentHealth >= maxHealth)
         {
             currentHealth = maxHealth;
-            invincibilityCounter = invincibilityLength;
+            /*invincibilityCounter = invincibilityLength;
 
             playerRenderer.enabled = false;
             playerRendererSpikes.enabled = false;
 
-            flashCounter = flashLength;
+            flashCounter = flashLength;*/
         }
     }
+
+    public void setSpawnPoint(Vector3 newPosition)
+    {
+        respawnPoint = newPosition;
+    }
 }
+
+   
