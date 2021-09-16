@@ -107,7 +107,6 @@ public class HealthManager : MonoBehaviour
         //currentHealth = maxHealth;
         if (!isRespawning)
         {
-
             StartCoroutine("Respawnco");
         }
     }
