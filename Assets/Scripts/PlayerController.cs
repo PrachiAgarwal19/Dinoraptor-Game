@@ -34,6 +34,24 @@ public class PlayerController : MonoBehaviour
         controller = GetComponent<CharacterController>();
     }
 
+    void Update()
+    {
+        Vector3 movementDirection = new Vector3(Input.GetAxis("Horizontal"),0, Input.GetAxis("Vertical"));
+
+        if(movementDirection!=Vector3.zero)
+        {
+            playerModel.transform.rotation = Quaternion.LookRotation(movementDirection*(-1));
+        }
+        else
+        {
+            Vector3 lookForward;
+            lookForward.x=0;
+            lookForward.y=0;
+            lookForward.z=-1f;
+            playerModel.transform.rotation = Quaternion.LookRotation(lookForward);
+        }
+    }
+
     // Update is called once per frame
     void LateUpdate()
     {
