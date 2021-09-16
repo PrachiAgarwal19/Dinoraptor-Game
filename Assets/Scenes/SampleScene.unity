@@ -1369,7 +1369,7 @@ MonoBehaviour:
   maxHealth: 5
   currentHealth: 0
   thePlayer: {fileID: 1879166407}
-  invincibilityLength: 5
+  invincibilityLength: 1
   playerRenderer: {fileID: 1656347339}
   playerRendererSpikes: {fileID: 771618070}
   flashLength: 0.1
