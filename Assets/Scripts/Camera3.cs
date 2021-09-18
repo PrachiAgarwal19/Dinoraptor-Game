@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour { 
+public class Camera3 : MonoBehaviour
+{
+    public Transform target;
 
-   public Transform target;
-
-   private Vector3 offset1;
+   private Vector3 offset3;
 
    public bool useOffsetValues;
 
@@ -23,7 +23,7 @@ public class CameraController : MonoBehaviour {
     //Use this for initialization
     void Start()
     {
-        offset1 = transform.position - target.position;
+        offset3 = transform.position - target.position;
         // if (!useOffsetValues)
         // {
         //     offset = target.position - transform.position;
@@ -37,13 +37,12 @@ public class CameraController : MonoBehaviour {
    
     void Update()
     {
-        transform.position=target.position+offset1;
+        transform.position=target.position+offset3;
         Vector3 movementDirection = new Vector3(Input.GetAxis("Horizontal"),0, Input.GetAxis("Vertical"));
 
         if(movementDirection!=Vector3.zero)
         {
             transform.rotation = Quaternion.LookRotation(movementDirection);
-            transform.position=target.position-offset1;
         }
         else
         {
@@ -95,5 +94,4 @@ public class CameraController : MonoBehaviour {
         // }
         // transform.LookAt(target);
     }
-
 }
