@@ -7,6 +7,8 @@ public class GoldPickup : MonoBehaviour
 
     public int value;
     public GameObject pickupEffect;
+    public AudioSource CoinSound;
+  
     // Start is called before the first frame update
     void Start()
     {
@@ -21,11 +23,13 @@ public class GoldPickup : MonoBehaviour
         // rather than per frame.
         transform.Rotate(new Vector3(15, 30, 45) * Time.deltaTime);
     }
-
+   
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")
         {
+            CoinSound.Play();
+         
             FindObjectOfType<GameManager>().AddGold(value);
             Instantiate(pickupEffect, transform.position, transform.rotation);
             Destroy(gameObject);

@@ -5,7 +5,7 @@ using UnityEngine;
 public class HurtPlayer : MonoBehaviour
 {
     public int damageToGive = 1;
-
+    public AudioSource CollideSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,10 +22,13 @@ public class HurtPlayer : MonoBehaviour
     {
         if(other.gameObject.tag == "Player")
         {
+            CollideSound.Play();
             Vector3 hitDirection=other.transform.position-transform.position;
             hitDirection=hitDirection.normalized;
 
             FindObjectOfType<HealthManager>().HurtPlayer(damageToGive, hitDirection);
         }
     }
+
+   
 }
