@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
 
     private float knockBackCounter;
 
-    public AudioSource CollideSound;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -76,7 +76,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetButtonDown("Jump"))
                 {
-                    CollideSound.Play();
+                    
                     moveDirection.y = jumpForce;
                 }
             }
@@ -111,7 +111,7 @@ public class PlayerController : MonoBehaviour
 
     public void Knockback(Vector3 direction)
     {
-        
+     
         knockBackCounter = knockBackTime;
 
         moveDirection=direction*knockBackForce;
