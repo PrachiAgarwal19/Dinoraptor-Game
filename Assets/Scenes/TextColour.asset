@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TextColour
   m_EditorClassIdentifier: 
   colorMode: 3
-  topLeft: {r: 0.23670468, g: 0.764151, b: 0.16580632, a: 1}
+  topLeft: {r: 0, g: 0.16037738, b: 0.02917372, a: 1}
   topRight: {r: 0.23529412, g: 0.7647059, b: 0.16470589, a: 1}
   bottomLeft: {r: 0.054951176, g: 0.3490566, b: 0.042808827, a: 1}
-  bottomRight: {r: 0.05490196, g: 0.34901962, b: 0.043137256, a: 1}
+  bottomRight: {r: 0.12691693, g: 0.16037738, b: 0.12557852, a: 1}
