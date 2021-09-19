@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -116,5 +116,9 @@ public class PlayerController : MonoBehaviour
 
         moveDirection=direction*knockBackForce;
         moveDirection.y=knockBackForce;
+
     }
+    
+        
+    
 }

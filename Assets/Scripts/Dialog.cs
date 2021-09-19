@@ -2,13 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 [System.Serializable]
-public class Dialog  
-
-{
-    [SerializeField] List<string> lines;
-
-
-    public List<string> Lines {
-        get { return lines; }
-    }
+public class Dialog{
+    
+    public string name;
+    [TextArea(3, 10)]
+    public string[] sentences;
+    
+    
 }

@@ -4,40 +4,57 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
+
 {
-    [SerializeField] GameObject dialogBox;
-    [SerializeField] Text  dialogText;
-    [SerializeField] int letterPerSecond;
+    public Text nameText;
+    public Text dialogText;
 
-    public static DialogManager Instance { get; private set; }
-
-    private void Awake()
+   private Queue<string> sentences;
+    void Start()
     {
-        Instance = this;
-
-    }
-    
-
-    public void ShowDialog(Dialog dialog)
-     {
-         dialogBox.SetActive(true);
-         StartCoroutine(TypeDialog(dialog.Lines[0]));
-
-
-
+      sentences = new Queue<string>();
     }
 
-    public IEnumerator TypeDialog(string line)
+    public void StartDialog(Dialog dialog)
     {
-        dialogText.text="";
-        foreach (var letter in line.ToCharArray())
+        
+        nameText.text = dialog.name;
+        
+        sentences.Clear();
+        foreach (string sentence in dialog.sentences)
         {
-            dialogText.text += letter;
-            yield return new WaitForSeconds(1f/letterPerSecond);
+            sentences.Enqueue(sentence);
 
         }
-       
+
+        DisplayNextSentence();
+
+
+
     }
 
+    public void DisplayNextSentence()
+    {
+
+        if(sentences.Count == 0)
+        {
+            EndDialog();
+            return;
+        }
+        string sentence = sentences.Dequeue();
+        dialogText.text = sentence;
+
+    }
+
+    void EndDialog()
+    {
+        Debug.Log("End of conversation");
+        
+      
+    }
+
+    
+
+   
 
 }
