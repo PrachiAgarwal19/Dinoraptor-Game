@@ -9860,7 +9860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    name: 
+    name: Dino
     sentences:
     - 123
     - 456
