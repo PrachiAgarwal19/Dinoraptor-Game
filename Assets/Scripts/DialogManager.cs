@@ -18,7 +18,6 @@ public class DialogManager : MonoBehaviour
     public void StartDialog(Dialog dialog)
     {
         
-        nameText.text = dialog.name;
         
         sentences.Clear();
         foreach (string sentence in dialog.sentences)
