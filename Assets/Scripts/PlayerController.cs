@@ -37,10 +37,16 @@ public class PlayerController : MonoBehaviour
     }
 
     void Update()
-    {
+    {   
+        
         Vector3 movementDirection = new Vector3(Input.GetAxis("Horizontal"),0, Input.GetAxis("Vertical"));
+     
 
-        if(movementDirection!=Vector3.zero)
+
+        
+        
+
+        if(movementDirection!=Vector3.zero )
         {
             playerModel.transform.rotation = Quaternion.LookRotation(movementDirection*(-1));
         }
