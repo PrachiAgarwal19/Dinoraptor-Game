@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.5017597, g: 0.27028403, b: 0.21009612, a: 1}
+  m_IndirectSpecularColor: {r: 0.50157547, g: 0.27016097, b: 0.21001157, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2747,8 +2747,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2, y: 4, z: 2}
+  m_Center: {x: -1, y: 3.6, z: -1.5}
 --- !u!1 &185379023
 GameObject:
   m_ObjectHideFlags: 0
@@ -3030,8 +3030,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2, y: 4, z: 2}
+  m_Center: {x: -1.5, y: 3, z: -1.5}
 --- !u!1 &191006649
 GameObject:
   m_ObjectHideFlags: 0
@@ -9484,8 +9484,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3, y: 5, z: 2}
+  m_Center: {x: -1.5, y: 3, z: 0}
 --- !u!4 &640335066 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1244539903904952439, guid: c2af11c01d1176e4d98619176b00d199,
@@ -11017,8 +11017,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2, y: 2.8, z: 2}
+  m_Center: {x: -1.3, y: 2, z: 0}
 --- !u!1001 &716547109
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12157,8 +12157,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2, y: 4, z: 2}
+  m_Center: {x: -1.3, y: 4, z: -1.3}
 --- !u!1 &812800537
 GameObject:
   m_ObjectHideFlags: 0
@@ -13028,8 +13028,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2, y: 4, z: 2}
+  m_Center: {x: -1.5, y: 3, z: -1}
 --- !u!1001 &926609783
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17605,8 +17605,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2, y: 5, z: 2}
+  m_Center: {x: -1.5, y: 3, z: -1.5}
 --- !u!1 &1022223883
 GameObject:
   m_ObjectHideFlags: 0
@@ -18648,8 +18648,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2, y: 3, z: 2}
+  m_Center: {x: -3, y: 3, z: -1}
 --- !u!1001 &1093978403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23085,8 +23085,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2, y: 4, z: 2}
+  m_Center: {x: -1, y: 1.5, z: -1.3}
 --- !u!1001 &1348228110
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27239,8 +27239,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2, y: 3, z: 2}
+  m_Center: {x: -2, y: 2, z: -1}
 --- !u!1 &1611420411
 GameObject:
   m_ObjectHideFlags: 0
