@@ -21,6 +21,8 @@ public class PlayFabManager : MonoBehaviour
         
     }
 
+    
+
     void OnLoginSuccess(LoginResult result)
     {
         messageText.text = "Logged In";
