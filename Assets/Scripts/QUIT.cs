@@ -1,13 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class QUIT : MonoBehaviour
 {
-    public void doquit()
+    public void QuitGmae()
     {
-        
-        Application.Quit();
+        SceneManager.LoadScene(0);
 
     }
 }
