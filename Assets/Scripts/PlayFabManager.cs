@@ -3,13 +3,19 @@ using UnityEngine;
 using PlayFab;
 using PlayFab.ClientModels;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayFabManager : MonoBehaviour
 {
     public Text messageText;
     public InputField emailInput;
     public InputField passwordInput;
-   
+
+    public void Awake()
+    {
+        GoldPickup.OnUpdate += SendLeaderboard;
+    }
+
     public void LoginButton()
     {
         var request = new LoginWithEmailAddressRequest
@@ -26,8 +32,8 @@ public class PlayFabManager : MonoBehaviour
     void OnLoginSuccess(LoginResult result)
     {
         messageText.text = "Logged In";
-        SendLeaderboard();
-        // SendLeaderboard();
+        //Change Scene
+        SceneManager.LoadScene("Menu");
     }
     public void RegisterButton()
     {
@@ -50,8 +56,9 @@ public class PlayFabManager : MonoBehaviour
         messageText.text = error.ErrorMessage;
     }
 
-    public void SendLeaderboard()
+    public void SendLeaderboard( int score )
     {
+        Debug.Log(score);
         var request = new UpdatePlayerStatisticsRequest
         {
             Statistics = new List<StatisticUpdate>
@@ -59,7 +66,7 @@ public class PlayFabManager : MonoBehaviour
                 new StatisticUpdate
                 {
                     StatisticName = "Score",
-                    Value = 5
+                    Value = score
                 }
             }
         };

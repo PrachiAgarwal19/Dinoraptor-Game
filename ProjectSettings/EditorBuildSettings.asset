@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: a210605a632185347bf60227f0f58443
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/DinoRaptor.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}

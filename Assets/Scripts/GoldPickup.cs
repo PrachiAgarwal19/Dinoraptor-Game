@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class GoldPickup : MonoBehaviour
 {
-
+    private static int score = 0;
     public int value;
     public GameObject pickupEffect;
     public AudioSource CoinSound;
-  
+
+    public delegate void ScoreUpdate(int value);
+    public static event ScoreUpdate OnUpdate;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,8 +32,10 @@ public class GoldPickup : MonoBehaviour
         if(other.tag == "Player")
         {
             CoinSound.Play();
-         
+            score += value;
+            Debug.Log(score);
             FindObjectOfType<GameManager>().AddGold(value);
+            OnUpdate(score);
             Instantiate(pickupEffect, transform.position, transform.rotation);
             Destroy(gameObject);
         }
