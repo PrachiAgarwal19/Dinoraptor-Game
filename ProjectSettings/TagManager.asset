@@ -5,6 +5,21 @@ TagManager:
   serializedVersion: 2
   tags:
   - Coin
+  - Question Easy 1
+  - Question Easy 2
+  - Question Easy 3
+  - Question Easy 4
+  - Question Easy 5
+  - Question Medium 1
+  - Question Medium 2
+  - Question Medium 3
+  - Question Medium 4
+  - Question Medium 5
+  - Question Hard 1
+  - Question Hard 2
+  - Question Hard 3
+  - Question Hard 4
+  - Question Hard 5
   layers:
   - Default
   - TransparentFX

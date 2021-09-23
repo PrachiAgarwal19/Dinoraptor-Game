@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GoldPickup : MonoBehaviour
 {
-    private static int score = 0;
+    public static int score = 0;
     public int value;
     public GameObject pickupEffect;
     public AudioSource CoinSound;
