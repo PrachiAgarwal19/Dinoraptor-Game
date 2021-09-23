@@ -14,6 +14,8 @@ public class PlayFabManager : MonoBehaviour
     public void Awake()
     {
         GoldPickup.OnUpdate += SendLeaderboard;
+        HurtPlayer.OnUpdate += SendLeaderboard;
+        CanvasInput.OnUpdate += SendLeaderboard;
     }
 
     public void LoginButton()

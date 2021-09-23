@@ -7,7 +7,8 @@ public class HurtPlayer : MonoBehaviour
     public int damageToGive = 1;
 
     public AudioSource CollideSound;
-    
+    public delegate void ScoreUpdate(int value);
+    public static event ScoreUpdate OnUpdate;
 
     // Start is called before the first frame update
     void Start()
@@ -29,19 +30,19 @@ public class HurtPlayer : MonoBehaviour
             hitDirection = hitDirection.normalized;
             GoldPickup.score -= 1;
             Debug.Log(GoldPickup.score);
-
+            OnUpdate(GoldPickup.score);
             //OnUpdate(GoldPickup.score);
-            ScoreChange(GoldPickup.score);
+            
             FindObjectOfType<HealthManager>()
                 .HurtPlayer(damageToGive, hitDirection);
         }
     }
 
-    void OnEnable()
+    /*void OnEnable()
     {
         //subscribe to event
         GoldPickup.OnUpdate += ScoreChange;
-    }
+    }*/
 
     // void OnDisable()
     // {
@@ -50,9 +51,9 @@ public class HurtPlayer : MonoBehaviour
     // }
 
     //This will be called when invoked
-    void ScoreChange(int score)
+    /*void ScoreChange(int score)
     {
         score-=1;
         //Debug.Log(score);
-    }
+    }*/
 }
