@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEditor;
 
 public class CanvasInput : MonoBehaviour
 {
@@ -12,6 +13,11 @@ public class CanvasInput : MonoBehaviour
     public GameObject canvas;
     public delegate void ScoreUpdate(int value);
     public static event ScoreUpdate OnUpdate;
+
+    public GameObject incorrectCanvas;
+    //public Button tryAgain;
+
+    //public Text tryAgainText;
 
     private void Start(){
         btnClick.onClick.AddListener(GetInputOnClickHandler);
@@ -153,9 +159,32 @@ public class CanvasInput : MonoBehaviour
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
         }
-       
+        else{
+            //EditorUtility.DisplayDialog("Incorrect Answer","Oops! It is an incorrect answer.", "Try Again");
+            incorrectCanvas.GetComponent<Canvas> ().enabled = true;
+
+            //canvas.GetComponent<Canvas> ().enabled = false;
+            //incorrectCanvas.SetActive(true);
+            //tryAgain.onClick.AddListener(GetDisableOnClick);
+            //tryAgainText.enabled=true;
+            canvas.GetComponent<Canvas> ().enabled = false;
+            StartCoroutine(GetDisableOnClick(incorrectCanvas));
+            GoldPickup.score -= 10;
+            OnUpdate(GoldPickup.score);
+        }
     }
 
+    IEnumerator GetDisableOnClick(GameObject c){
+        yield return new WaitForSeconds(2);
+        c.GetComponent<Canvas> ().enabled = false;
+        canvas.GetComponent<Canvas> ().enabled = true;
+        //canvas.GetComponent<Canvas> ().enabled = true;
+        //StartCoroutine(DisableCanvas(incorrectCanvas));
+    }
+    // IEnumerator DisableText(Text c){
+    //     yield return new WaitForSeconds(2);
+    //     c.enabled=false;
+    // }
     IEnumerator DisableCanvas( GameObject c)
     {
         yield return new WaitForSeconds(1);
