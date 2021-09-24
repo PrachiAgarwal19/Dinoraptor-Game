@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.50157547, g: 0.27016097, b: 0.21001157, a: 1}
+  m_IndirectSpecularColor: {r: 0.5017597, g: 0.27028403, b: 0.21009612, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -536,6 +536,7 @@ MonoBehaviour:
   btnClick: {fileID: 29572045}
   answer: {fileID: 586524502}
   human: {fileID: 1799732925}
+  killSound: {fileID: 29572048}
   canvas: {fileID: 674838909}
 --- !u!1001 &34736668
 PrefabInstance:
@@ -1950,6 +1951,7 @@ MonoBehaviour:
   btnClick: {fileID: 98987655}
   answer: {fileID: 1789928776}
   human: {fileID: 1859872562}
+  killSound: {fileID: 98987658}
   canvas: {fileID: 1259325443}
 --- !u!1001 &103205936
 PrefabInstance:
@@ -2105,7 +2107,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: abcd
+  m_Text: 2+2
 --- !u!222 &105024571
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2615,6 +2617,7 @@ MonoBehaviour:
   btnClick: {fileID: 123832777}
   answer: {fileID: 1530473768}
   human: {fileID: 2143794405}
+  killSound: {fileID: 123832780}
   canvas: {fileID: 51803503}
 --- !u!1001 &126106819
 PrefabInstance:
@@ -2923,7 +2926,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: abcd
+  m_Text: 2+2
 --- !u!222 &136266329
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3521,7 +3524,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: abcd
+  m_Text: 2+2
 --- !u!222 &193511163
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4403,7 +4406,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: abcd
+  m_Text: 2+2
 --- !u!222 &247090968
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9616,6 +9619,7 @@ MonoBehaviour:
   btnClick: {fileID: 620589925}
   answer: {fileID: 1435966391}
   human: {fileID: 952482196}
+  killSound: {fileID: 620589928}
   canvas: {fileID: 609941401}
 --- !u!1 &621826167
 GameObject:
@@ -9667,7 +9671,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: abcd
+  m_Text: 2+2
 --- !u!222 &621826169
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10394,6 +10398,7 @@ MonoBehaviour:
   btnClick: {fileID: 657474135}
   answer: {fileID: 1089074223}
   human: {fileID: 1448192727}
+  killSound: {fileID: 657474138}
   canvas: {fileID: 518301907}
 --- !u!1001 &657833466
 PrefabInstance:
@@ -11787,7 +11792,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: abcd
+  m_Text: 2+2
 --- !u!222 &720341921
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12848,7 +12853,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: abcd
+  m_Text: 2+2
 --- !u!222 &812800540
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14066,7 +14071,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: abcd
+  m_Text: 2+2
 --- !u!222 &930618636
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14521,6 +14526,7 @@ MonoBehaviour:
   btnClick: {fileID: 953507644}
   answer: {fileID: 1748998347}
   human: {fileID: 1681441183}
+  killSound: {fileID: 953507647}
   canvas: {fileID: 1153636101}
 --- !u!1 &959580084 stripped
 GameObject:
@@ -14968,7 +14974,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: abcd
+  m_Text: 2+2
 --- !u!222 &970094791
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21608,6 +21614,7 @@ MonoBehaviour:
   btnClick: {fileID: 1224530420}
   answer: {fileID: 930462066}
   human: {fileID: 346707770}
+  killSound: {fileID: 1224530423}
   canvas: {fileID: 1606329763}
 --- !u!1 &1228089636
 GameObject:
@@ -22846,6 +22853,7 @@ MonoBehaviour:
   btnClick: {fileID: 1290112253}
   answer: {fileID: 1185567606}
   human: {fileID: 1842543680}
+  killSound: {fileID: 1290112257}
   canvas: {fileID: 1040623928}
 --- !u!82 &1290112257
 AudioSource:
@@ -23944,7 +23952,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: abcd
+  m_Text: 2+2
 --- !u!222 &1332765572
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25199,7 +25207,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: abcd
+  m_Text: 2+2
 --- !u!222 &1411361881
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25985,6 +25993,7 @@ MonoBehaviour:
   btnClick: {fileID: 1457763322}
   answer: {fileID: 262136959}
   human: {fileID: 1051656836}
+  killSound: {fileID: 1457763325}
   canvas: {fileID: 1228089636}
 --- !u!1001 &1464095941
 PrefabInstance:
@@ -26487,7 +26496,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: abcd
+  m_Text: 2+2
 --- !u!222 &1524536319
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26957,6 +26966,7 @@ MonoBehaviour:
   btnClick: {fileID: 1539777719}
   answer: {fileID: 358232735}
   human: {fileID: 2043330301}
+  killSound: {fileID: 1539777722}
   canvas: {fileID: 1917365830}
 --- !u!1 &1542582636 stripped
 GameObject:
@@ -27053,7 +27063,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: abcd
+  m_Text: 2+2
 --- !u!222 &1553978433
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -28836,6 +28846,7 @@ MonoBehaviour:
   btnClick: {fileID: 1623637837}
   answer: {fileID: 1568884397}
   human: {fileID: 569537433}
+  killSound: {fileID: 1623637840}
   canvas: {fileID: 1751437296}
 --- !u!1001 &1629706577
 PrefabInstance:
@@ -31501,6 +31512,7 @@ MonoBehaviour:
   btnClick: {fileID: 1791809383}
   answer: {fileID: 1864337878}
   human: {fileID: 1847985506}
+  killSound: {fileID: 1791809386}
   canvas: {fileID: 1770938939}
 --- !u!1 &1794310710
 GameObject:
@@ -32392,6 +32404,7 @@ MonoBehaviour:
   btnClick: {fileID: 1821716928}
   answer: {fileID: 212476739}
   human: {fileID: 598670214}
+  killSound: {fileID: 1821716931}
   canvas: {fileID: 2085324310}
 --- !u!1 &1821732453
 GameObject:
@@ -32462,7 +32475,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: abcd
+  m_Text: 2+2
 --- !u!222 &1821732456
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -35136,6 +35149,7 @@ MonoBehaviour:
   btnClick: {fileID: 1984978707}
   answer: {fileID: 453843719}
   human: {fileID: 59472706}
+  killSound: {fileID: 1984978710}
   canvas: {fileID: 1191592825}
 --- !u!1 &1986368316
 GameObject:
@@ -35478,7 +35492,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: abcd
+  m_Text: 2+2
 --- !u!222 &1991992326
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -35907,6 +35921,7 @@ MonoBehaviour:
   btnClick: {fileID: 2002153549}
   answer: {fileID: 77600877}
   human: {fileID: 1532914621}
+  killSound: {fileID: 2002153552}
   canvas: {fileID: 2067536451}
 --- !u!1001 &2003093303
 PrefabInstance:
