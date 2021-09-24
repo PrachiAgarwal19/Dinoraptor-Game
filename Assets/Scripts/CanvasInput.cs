@@ -27,7 +27,7 @@ public class CanvasInput : MonoBehaviour
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
         }
-        if (answer.tag == "Question Medium 1" && answer.text == "4")
+         else if (answer.tag == "Question Medium 1" && answer.text == "4")
         {
             killSound.Play();
             Debug.Log("correct answer");
@@ -36,7 +36,7 @@ public class CanvasInput : MonoBehaviour
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
         }
-        if (answer.tag == "Question Hard 1" && answer.text == "4")
+        else if (answer.tag == "Question Hard 1" && answer.text == "4")
         {
             killSound.Play();
             Debug.Log("correct answer");
@@ -45,7 +45,7 @@ public class CanvasInput : MonoBehaviour
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
         }
-        if (answer.tag == "Question Easy 2" && answer.text == "4")
+        else if (answer.tag == "Question Easy 2" && answer.text == "4")
         {
             killSound.Play();
             Debug.Log("correct answer");
@@ -54,7 +54,7 @@ public class CanvasInput : MonoBehaviour
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
         }
-        if (answer.tag == "Question Medium 2" && answer.text == "4")
+        else if (answer.tag == "Question Medium 2" && answer.text == "4")
         {
             killSound.Play();
             Debug.Log("correct answer");
@@ -63,7 +63,7 @@ public class CanvasInput : MonoBehaviour
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
         }
-        if (answer.tag == "Question Hard 2" && answer.text == "4")
+        else if (answer.tag == "Question Hard 2" && answer.text == "4")
         {
             killSound.Play();
             Debug.Log("correct answer");
@@ -72,7 +72,7 @@ public class CanvasInput : MonoBehaviour
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
         }
-        if (answer.tag == "Question Easy 3" && answer.text == "4")
+        else if (answer.tag == "Question Easy 3" && answer.text == "4")
         {
             killSound.Play();
             Debug.Log("correct answer");
@@ -81,7 +81,7 @@ public class CanvasInput : MonoBehaviour
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
         }
-        if (answer.tag == "Question Medium 3" && answer.text == "4")
+        else if (answer.tag == "Question Medium 3" && answer.text == "4")
         {
             killSound.Play();
             Debug.Log("correct answer");
@@ -90,7 +90,7 @@ public class CanvasInput : MonoBehaviour
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
         }
-        if (answer.tag == "Question Hard 3" && answer.text == "4")
+        else if (answer.tag == "Question Hard 3" && answer.text == "4")
         {
             killSound.Play();
             Debug.Log("correct answer");
@@ -99,7 +99,7 @@ public class CanvasInput : MonoBehaviour
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
         }
-        if (answer.tag == "Question Easy 4" && answer.text == "4")
+        else if (answer.tag == "Question Easy 4" && answer.text == "4")
         {
             killSound.Play();
             Debug.Log("correct answer");
@@ -108,7 +108,7 @@ public class CanvasInput : MonoBehaviour
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
         }
-        if (answer.tag == "Question Medium 4" && answer.text == "4")
+        else if (answer.tag == "Question Medium 4" && answer.text == "4")
         {
             killSound.Play();
             Debug.Log("correct answer");
@@ -117,7 +117,7 @@ public class CanvasInput : MonoBehaviour
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
         }
-        if (answer.tag == "Question Hard 4" && answer.text == "4")
+        else if (answer.tag == "Question Hard 4" && answer.text == "4")
         {
             killSound.Play();
             Debug.Log("correct answer");
@@ -126,7 +126,7 @@ public class CanvasInput : MonoBehaviour
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
         }
-        if (answer.tag == "Question Easy 5" && answer.text == "4")
+        else if (answer.tag == "Question Easy 5" && answer.text == "4")
         {
             killSound.Play();
             Debug.Log("correct answer");
@@ -135,7 +135,7 @@ public class CanvasInput : MonoBehaviour
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
         }
-        if (answer.tag == "Question Medium 5" && answer.text == "4")
+        else if (answer.tag == "Question Medium 5" && answer.text == "4")
         {
             killSound.Play();
             Debug.Log("correct answer");
@@ -144,7 +144,7 @@ public class CanvasInput : MonoBehaviour
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
         }
-        if (answer.tag == "Question Hard 5" && answer.text == "4")
+        else if (answer.tag == "Question Hard 5" && answer.text == "4")
         {
             killSound.Play();
             Debug.Log("correct answer");
@@ -153,6 +153,7 @@ public class CanvasInput : MonoBehaviour
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
         }
+       
     }
 
     IEnumerator DisableCanvas( GameObject c)

@@ -47,7 +47,7 @@ public class DialogManager : MonoBehaviour
 
     void EndDialog()
     {
-        Debug.Log("End of conversation");
+        Debug.Log(" Human Destroyed");
         
       
     }
