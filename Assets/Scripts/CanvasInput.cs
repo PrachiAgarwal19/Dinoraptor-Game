@@ -22,10 +22,11 @@ public class CanvasInput : MonoBehaviour
         if(answer.tag == "Question Easy 1" && answer.text == "4"){
             killSound.Play();
             Debug.Log("correct answer");
+            
+            Destroy(human1);
             GoldPickup.score += 50;
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
-            Destroy(human1);
         }
     }
 
