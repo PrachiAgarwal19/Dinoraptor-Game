@@ -1,9 +1,9 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CanvasInput : MonoBehaviour
+public class CanvasInputc : MonoBehaviour
 {
     public Button btnClick;
     public InputField answer;
@@ -19,13 +19,14 @@ public class CanvasInput : MonoBehaviour
 
     public void GetInputOnClickHandler(){
         Debug.Log("Input : " + answer.text);
-        if(answer.tag == "Question Easy 1" && answer.text == "4"){
+        if(answer.tag == "Question Hard 1" && answer.text == "4"){
             killSound.Play();
             Debug.Log("correct answer");
+            
+            Destroy(human1);
             GoldPickup.score += 50;
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
-            Destroy(human1);
         }
     }
 
