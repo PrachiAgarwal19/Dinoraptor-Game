@@ -7,9 +7,9 @@ public class CanvasInputb : MonoBehaviour
 {
     public Button btnClick;
     public InputField answer;
-    public GameObject human1;
+    public GameObject human;
     public AudioSource killSound;
-    public GameObject canvas1;
+    public GameObject canvas;
     public delegate void ScoreUpdate(int value);
     public static event ScoreUpdate OnUpdate;
 
@@ -24,9 +24,11 @@ public class CanvasInputb : MonoBehaviour
             Debug.Log("correct answer");
             GoldPickup.score += 50;
             OnUpdate(GoldPickup.score);
-            StartCoroutine(DisableCanvas(canvas1));
-            Destroy(human1);
+            StartCoroutine(DisableCanvas(canvas));
+            Destroy(human);
         }
+
+
     }
 
     IEnumerator DisableCanvas( GameObject c)
