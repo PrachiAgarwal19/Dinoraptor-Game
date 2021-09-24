@@ -329,7 +329,8 @@ AudioSource:
   m_GameObject: {fileID: 469955289}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: a67e26b85d5d28d43ac32c636de4daf5,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: caf9ca0730d187a4ca2c2fd68f0bb944, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -3074,6 +3075,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1912731509}
   - component: {fileID: 1912731510}
+  - component: {fileID: 1912731511}
   m_Layer: 5
   m_Name: Slider
   m_TagString: Untagged
@@ -3149,7 +3151,31 @@ MonoBehaviour:
   m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.0001
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1912731511}
+        m_MethodName: SetLevel
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1912731511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1912731508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3bf5c458fecdac743bdef1a06ef5d5ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: a67e26b85d5d28d43ac32c636de4daf5, type: 2}
