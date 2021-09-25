@@ -167,7 +167,7 @@ public class CanvasInput : MonoBehaviour
             //incorrectCanvas.SetActive(true);
             //tryAgain.onClick.AddListener(GetDisableOnClick);
             //tryAgainText.enabled=true;
-            canvas.GetComponent<Canvas> ().enabled = false;
+            //canvas.GetComponent<Canvas> ().enabled = false;
             StartCoroutine(GetDisableOnClick(incorrectCanvas));
             GoldPickup.score -= 10;
             OnUpdate(GoldPickup.score);
@@ -175,9 +175,9 @@ public class CanvasInput : MonoBehaviour
     }
 
     IEnumerator GetDisableOnClick(GameObject c){
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(0.75f);
         c.GetComponent<Canvas> ().enabled = false;
-        canvas.GetComponent<Canvas> ().enabled = true;
+        //canvas.GetComponent<Canvas> ().enabled = true;
         //canvas.GetComponent<Canvas> ().enabled = true;
         //StartCoroutine(DisableCanvas(incorrectCanvas));
     }
