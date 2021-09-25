@@ -34,10 +34,10 @@ public class GoldPickup : MonoBehaviour
             CoinSound.Play();
             score += value;
             Debug.Log(score);
-            FindObjectOfType<GameManager>().AddGold(value);
             OnUpdate(score);
             Instantiate(pickupEffect, transform.position, transform.rotation);
             Destroy(gameObject);
         }
     }
+
 }

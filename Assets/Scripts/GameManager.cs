@@ -6,9 +6,13 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public int currentGold;
     public Text goldText;
-
+    public void Awake()
+    {
+        GoldPickup.OnUpdate += ChangeScore;
+        HurtPlayer.OnUpdate += ChangeScore;
+        CanvasInput.OnUpdate += ChangeScore;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -22,9 +26,8 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void AddGold(int goldToAdd)
+    public void ChangeScore(int score)
     {
-        currentGold += goldToAdd;
-        goldText.text = "Gold: " + currentGold +"!";
+        goldText.text = "Score: " + score +"!";
     }
 }
