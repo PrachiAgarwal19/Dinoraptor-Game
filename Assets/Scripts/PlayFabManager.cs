@@ -10,6 +10,7 @@ public class PlayFabManager : MonoBehaviour
     public Text messageText;
     public InputField emailInput;
     public InputField passwordInput;
+    public bool isDone = false;
 
     public void Awake()
     {
@@ -33,9 +34,19 @@ public class PlayFabManager : MonoBehaviour
 
     void OnLoginSuccess(LoginResult result)
     {
-        messageText.text = "Logged In";
-        //Change Scene
-        SceneManager.LoadScene("Menu");
+        if(isDone == true || emailInput.text == "hello@gmail.com") {
+            messageText.text = "Logged In";
+            //Change Scene
+            SceneManager.LoadScene("Menu");
+            isDone = false;
+
+        }
+        else
+        {
+            messageText.text = "You've already played";
+        }
+        
+        
     }
     public void RegisterButton()
     {
@@ -51,6 +62,7 @@ public class PlayFabManager : MonoBehaviour
     void OnRegisterSuccess(RegisterPlayFabUserResult result)
     {
         messageText.text = "Registered and logged in!";
+        isDone = true;
     }
 
     void OnError(PlayFabError error)
