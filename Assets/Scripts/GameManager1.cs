@@ -4,14 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class GameManager2 : MonoBehaviour
+public class GameManager1 : MonoBehaviour
 {
-    public Text goldText;
+    public Text livecheck;
     public void Awake()
     {
-        GoldPickup.OnUpdate += ChangeScore;
-        HurtPlayer.OnUpdate += ChangeScore;
-        CanvasInput.OnUpdate += ChangeScore;
+
+        HurtPlayer.OnUpdate += ChangeLive;
+        CanvasInput.OnUpdate += ChangeLive;
     }
 
     // Start is called before the first frame update
@@ -26,8 +26,8 @@ public class GameManager2 : MonoBehaviour
 
     }
 
-    public void ChangeScore(int score)
+    public void ChangeLive(int live)
     {
-        goldText.text = "Score: " + score + "!";
+        livecheck.text = "live: " + live + "!";
     }
 }
