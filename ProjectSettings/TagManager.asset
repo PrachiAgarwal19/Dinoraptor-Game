@@ -20,6 +20,11 @@ TagManager:
   - Question Hard 3
   - Question Hard 4
   - Question Hard 5
+  - Platform
+  - West Wall
+  - West Wall(1)
+  - West Wall(2)
+  - West Wall(3)
   layers:
   - Default
   - TransparentFX
