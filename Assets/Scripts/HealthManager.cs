@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthManager : MonoBehaviour
 {
@@ -27,13 +28,16 @@ public class HealthManager : MonoBehaviour
     public float fadeSpeed;
     public float waitForFade;
 
+    public Text livesText;
+
+
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
         
         //thePlayer = FindObjectOfType<PlayerController>();
-        respawnPoint = thePlayer.transform.position;
+        //respawnPoint = thePlayer.transform.position;
     }
 
     // Update is called once per frame
@@ -75,6 +79,8 @@ public class HealthManager : MonoBehaviour
                 isFadeFromBlack = false;
             }
         }
+
+        ChangeLives(currentHealth);
     }
     
     public void HurtPlayer(int damage, Vector3 direction)
@@ -84,7 +90,11 @@ public class HealthManager : MonoBehaviour
             currentHealth -= damage;
             if (currentHealth <= 0)
             {
-                respawn();
+                //respawn();
+                Instantiate(deathEffect, thePlayer.transform.position, thePlayer.transform.rotation);
+                isFadeToBlack = true;
+                StartCoroutine(ChangeScreen());
+                
             }
             else
             {
@@ -101,46 +111,60 @@ public class HealthManager : MonoBehaviour
         }
         
     }
-    public void respawn()
+
+    public void ChangeLives(int currentHealth)
     {
-        //thePlayer.transform.position = respawnPoint;
-        //currentHealth = maxHealth;
-        if (!isRespawning)
-        {
-            StartCoroutine("Respawnco");
-        }
-    }
-    public IEnumerator Respawnco()
-    {
-        isRespawning = true;
-        thePlayer.gameObject.SetActive(false);
-        Instantiate(deathEffect, thePlayer.transform.position, thePlayer.transform.rotation);
-
-        yield return new WaitForSeconds(respawnLength);
-
-        isFadeToBlack = true;
-
-        yield return new WaitForSeconds(waitForFade);
-
-        isFadeToBlack = false;
-        isFadeFromBlack = true;
-        
-        isRespawning = false;
-
-        thePlayer.gameObject.SetActive(true);
-        thePlayer.transform.position = respawnPoint;
-        currentHealth = maxHealth;
-
-        invincibilityCounter = invincibilityLength;
-
-        playerRenderer.enabled = false;
-        playerRendererSpikes.enabled = false;
-
-        flashCounter = flashLength;
-
+        livesText.text = "Lives: " + currentHealth ;
     }
 
-    public void HealPlayer(int healAmount)
+    IEnumerator ChangeScreen()
+    {
+        yield return new WaitForSeconds(0.5f);
+       
+        SceneManager.LoadScene(4);
+    }
+
+
+    /* public void respawn()
+     {
+         //thePlayer.transform.position = respawnPoint;
+         //currentHealth = maxHealth;
+         if (!isRespawning)
+         {
+             StartCoroutine("Respawnco");
+         }
+     }
+     public IEnumerator Respawnco()
+     {
+         isRespawning = true;
+         thePlayer.gameObject.SetActive(false);
+         Instantiate(deathEffect, thePlayer.transform.position, thePlayer.transform.rotation);
+
+         yield return new WaitForSeconds(respawnLength);
+
+         isFadeToBlack = true;
+
+         yield return new WaitForSeconds(waitForFade);
+
+         isFadeToBlack = false;
+         isFadeFromBlack = true;
+
+         isRespawning = false;
+
+         thePlayer.gameObject.SetActive(true);
+         thePlayer.transform.position = respawnPoint;
+         currentHealth = maxHealth;
+
+         invincibilityCounter = invincibilityLength;
+
+         playerRenderer.enabled = false;
+         playerRendererSpikes.enabled = false;
+
+         flashCounter = flashLength;
+
+     }*/
+
+    /*public void HealPlayer(int healAmount)
     {
         currentHealth += healAmount;
         if (currentHealth >= maxHealth)
@@ -151,14 +175,14 @@ public class HealthManager : MonoBehaviour
             playerRenderer.enabled = false;
             playerRendererSpikes.enabled = false;
 
-            flashCounter = flashLength;*/
+            flashCounter = flashLength;
         }
     }
 
     public void setSpawnPoint(Vector3 newPosition)
     {
         respawnPoint = newPosition;
-    }
+    }*/
 }
 
    

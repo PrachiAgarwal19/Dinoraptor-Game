@@ -37,7 +37,7 @@ public class CanvasInput : MonoBehaviour
         {
             killSound.Play();
             Debug.Log("correct answer");
-            GoldPickup.score += 50;
+            GoldPickup.score += 60;
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
@@ -46,7 +46,7 @@ public class CanvasInput : MonoBehaviour
         {
             killSound.Play();
             Debug.Log("correct answer");
-            GoldPickup.score += 50;
+            GoldPickup.score += 70;
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
@@ -64,7 +64,7 @@ public class CanvasInput : MonoBehaviour
         {
             killSound.Play();
             Debug.Log("correct answer");
-            GoldPickup.score += 50;
+            GoldPickup.score += 60;
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
@@ -73,7 +73,7 @@ public class CanvasInput : MonoBehaviour
         {
             killSound.Play();
             Debug.Log("correct answer");
-            GoldPickup.score += 50;
+            GoldPickup.score += 70;
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
@@ -91,7 +91,7 @@ public class CanvasInput : MonoBehaviour
         {
             killSound.Play();
             Debug.Log("correct answer");
-            GoldPickup.score += 50;
+            GoldPickup.score += 60;
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
@@ -100,7 +100,7 @@ public class CanvasInput : MonoBehaviour
         {
             killSound.Play();
             Debug.Log("correct answer");
-            GoldPickup.score += 50;
+            GoldPickup.score += 70;
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
@@ -118,7 +118,7 @@ public class CanvasInput : MonoBehaviour
         {
             killSound.Play();
             Debug.Log("correct answer");
-            GoldPickup.score += 50;
+            GoldPickup.score += 60;
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
@@ -127,7 +127,7 @@ public class CanvasInput : MonoBehaviour
         {
             killSound.Play();
             Debug.Log("correct answer");
-            GoldPickup.score += 50;
+            GoldPickup.score += 70;
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
@@ -145,7 +145,7 @@ public class CanvasInput : MonoBehaviour
         {
             killSound.Play();
             Debug.Log("correct answer");
-            GoldPickup.score += 50;
+            GoldPickup.score += 60;
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
@@ -154,7 +154,7 @@ public class CanvasInput : MonoBehaviour
         {
             killSound.Play();
             Debug.Log("correct answer");
-            GoldPickup.score += 50;
+            GoldPickup.score += 70;
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);

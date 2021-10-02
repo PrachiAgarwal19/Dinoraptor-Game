@@ -5,7 +5,8 @@ using UnityEngine;
 public class HurtPlayer : MonoBehaviour
 {
     public int damageToGive = 1;
-
+   
+    
     public AudioSource CollideSound;
     public delegate void ScoreUpdate(int value);
     public static event ScoreUpdate OnUpdate;
@@ -29,6 +30,7 @@ public class HurtPlayer : MonoBehaviour
                 other.transform.position - transform.position;
             hitDirection = hitDirection.normalized;
             GoldPickup.score -= 1;
+       
             Debug.Log(GoldPickup.score);
             OnUpdate(GoldPickup.score);
             //OnUpdate(GoldPickup.score);

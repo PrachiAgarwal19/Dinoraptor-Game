@@ -28,6 +28,6 @@ public class GameManager : MonoBehaviour
 
     public void ChangeScore(int score)
     {
-        goldText.text = "Score: " + score +"!";
+        goldText.text = "Score: " + score ;
     }
 }
