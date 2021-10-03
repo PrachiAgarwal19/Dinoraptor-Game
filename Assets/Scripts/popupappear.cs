@@ -11,7 +11,7 @@ public class popupappear : MonoBehaviour
    private InputField InputBox;
    [SerializeField]
    private Canvas Question;
-   public static int movespeed = 10;
+   public static int movespeed = 3;
     public Vector3 userDirection = Vector3.right;
 
     public void Update()
