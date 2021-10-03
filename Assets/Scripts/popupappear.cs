@@ -11,7 +11,7 @@ public class popupappear : MonoBehaviour
    private InputField InputBox;
    [SerializeField]
    private Canvas Question;
-   public static int movespeed = 3;
+   public static int movespeed = 10;
     public Vector3 userDirection = Vector3.right;
 
     public void Update()
@@ -34,35 +34,35 @@ public class popupappear : MonoBehaviour
         }
         
         if(other.CompareTag("West Wall(2)")){
-            Vector3 lookForward;
-            lookForward.x = 0f;
-            lookForward.y = 0;
-            lookForward.z = -360f;
-            transform.rotation = Quaternion.LookRotation(lookForward);
+            Vector3 lookf;
+            lookf.x = 0f;
+            lookf.y = 0;
+            lookf.z = -360f;
+            transform.rotation = Quaternion.LookRotation(lookf);
         }
 
         if(other.CompareTag("West Wall")){
-            Vector3 lookForward;
-            lookForward.x = -360f;
-            lookForward.y = 0;
-            lookForward.z = 0;
-            transform.rotation = Quaternion.LookRotation(lookForward);
+            Vector3 lookb;
+            lookb.x = 180f;
+            lookb.y = 0;
+            lookb.z = 0f;
+            transform.rotation = Quaternion.LookRotation(lookb);
         }
 
         if(other.CompareTag("West Wall(3)")){
-            Vector3 lookForward;
-            lookForward.x = 0f;
-            lookForward.y = 0;
-            lookForward.z = 360f;
-            transform.rotation = Quaternion.LookRotation(lookForward);
+            Vector3 looke;
+            looke.x = 0f;
+            looke.y = 0;
+            looke.z = 180f;
+            transform.rotation = Quaternion.LookRotation(looke);
         }
 
         if(other.CompareTag("West Wall(1)")){
-            Vector3 lookForward;
-            lookForward.x = 360f;
-            lookForward.y = 0;
-            lookForward.z = 0;
-            transform.rotation = Quaternion.LookRotation(lookForward);
+            Vector3 lookd;
+            lookd.x = -180f;
+            lookd.y = 0;
+            lookd.z = 0;
+            transform.rotation = Quaternion.LookRotation(lookd);
         }
     }
     void OnTriggerExit(Collider other)
