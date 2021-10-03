@@ -32,6 +32,7 @@ public class CanvasInput : MonoBehaviour
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
+            popupappear.movespeed = 3;
         }
          else if (answer.tag == "Question Medium 1" && answer.text == "4")
         {
@@ -41,6 +42,7 @@ public class CanvasInput : MonoBehaviour
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
+            popupappear.movespeed = 3;
         }
         else if (answer.tag == "Question Hard 1" && answer.text == "4")
         {
@@ -50,6 +52,7 @@ public class CanvasInput : MonoBehaviour
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
+            popupappear.movespeed = 3;
         }
         else if (answer.tag == "Question Easy 2" && answer.text == "4")
         {
@@ -59,6 +62,7 @@ public class CanvasInput : MonoBehaviour
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
+            popupappear.movespeed = 3;
         }
         else if (answer.tag == "Question Medium 2" && answer.text == "4")
         {
@@ -68,6 +72,7 @@ public class CanvasInput : MonoBehaviour
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
+            popupappear.movespeed = 3;
         }
         else if (answer.tag == "Question Hard 2" && answer.text == "4")
         {
@@ -77,6 +82,7 @@ public class CanvasInput : MonoBehaviour
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
+            popupappear.movespeed = 3;
         }
         else if (answer.tag == "Question Easy 3" && answer.text == "4")
         {
@@ -86,6 +92,7 @@ public class CanvasInput : MonoBehaviour
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
+            popupappear.movespeed = 3;
         }
         else if (answer.tag == "Question Medium 3" && answer.text == "4")
         {
@@ -95,6 +102,7 @@ public class CanvasInput : MonoBehaviour
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
+            popupappear.movespeed = 3;
         }
         else if (answer.tag == "Question Hard 3" && answer.text == "4")
         {
@@ -104,6 +112,7 @@ public class CanvasInput : MonoBehaviour
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
+            popupappear.movespeed = 3;
         }
         else if (answer.tag == "Question Easy 4" && answer.text == "4")
         {
@@ -113,6 +122,7 @@ public class CanvasInput : MonoBehaviour
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
+            popupappear.movespeed = 3;
         }
         else if (answer.tag == "Question Medium 4" && answer.text == "4")
         {
@@ -122,6 +132,7 @@ public class CanvasInput : MonoBehaviour
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
+            popupappear.movespeed = 3;
         }
         else if (answer.tag == "Question Hard 4" && answer.text == "4")
         {
@@ -131,6 +142,7 @@ public class CanvasInput : MonoBehaviour
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
+            popupappear.movespeed = 3;
         }
         else if (answer.tag == "Question Easy 5" && answer.text == "4")
         {
@@ -140,6 +152,7 @@ public class CanvasInput : MonoBehaviour
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
+            popupappear.movespeed = 3;
         }
         else if (answer.tag == "Question Medium 5" && answer.text == "4")
         {
@@ -149,6 +162,7 @@ public class CanvasInput : MonoBehaviour
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
+            popupappear.movespeed = 3;
         }
         else if (answer.tag == "Question Hard 5" && answer.text == "4")
         {
@@ -158,6 +172,7 @@ public class CanvasInput : MonoBehaviour
             OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
+            popupappear.movespeed = 3;
         }
         else{
             //EditorUtility.DisplayDialog("Incorrect Answer","Oops! It is an incorrect answer.", "Try Again");
@@ -177,6 +192,7 @@ public class CanvasInput : MonoBehaviour
     IEnumerator GetDisableOnClick(GameObject c){
         yield return new WaitForSeconds(0.75f);
         c.GetComponent<Canvas> ().enabled = false;
+        popupappear.movespeed = 3;
         //canvas.GetComponent<Canvas> ().enabled = true;
         //canvas.GetComponent<Canvas> ().enabled = true;
         //StartCoroutine(DisableCanvas(incorrectCanvas));

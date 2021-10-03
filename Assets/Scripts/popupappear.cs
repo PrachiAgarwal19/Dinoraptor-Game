@@ -74,7 +74,5 @@ public class popupappear : MonoBehaviour
            Question.GetComponent<Canvas> ().enabled = false;
            movespeed = 3;
        }
-    }
-
-    
+    }    
 }
