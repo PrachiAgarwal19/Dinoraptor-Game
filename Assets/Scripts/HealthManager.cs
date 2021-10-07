@@ -92,6 +92,7 @@ public class HealthManager : MonoBehaviour
             {
                 //respawn();
                 Instantiate(deathEffect, thePlayer.transform.position, thePlayer.transform.rotation);
+                thePlayer.gameObject.SetActive(false);
                 isFadeToBlack = true;
                 StartCoroutine(ChangeScreen());
                 
@@ -119,8 +120,8 @@ public class HealthManager : MonoBehaviour
 
     IEnumerator ChangeScreen()
     {
-        yield return new WaitForSeconds(0.5f);
-       
+        yield return new WaitForSeconds(2);
+        isFadeToBlack = false;
         SceneManager.LoadScene(4);
     }
 
