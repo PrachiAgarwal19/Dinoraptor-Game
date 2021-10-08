@@ -37,7 +37,7 @@ public class PlayFabManager : MonoBehaviour
         if(isDone == true || emailInput.text == "hello@gmail.com") {
             messageText.text = "Logged In";
             //Change Scene
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             isDone = false;
 
         }

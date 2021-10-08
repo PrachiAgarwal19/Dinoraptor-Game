@@ -27,16 +27,16 @@ public class ComicStrip : MonoBehaviour
             canvas1.GetComponent<Canvas> ().enabled = false;
             canvas2.GetComponent<Canvas> ().enabled = true;
         }
-        else if((canvas2.GetComponent<Canvas> ().enabled = true) && (Input.GetButtonDown("tab"))){
+        else if((canvas2.GetComponent<Canvas> ().enabled == true) && (Input.GetButtonDown("tab"))){
             canvas2.GetComponent<Canvas> ().enabled = false;
             canvas3.GetComponent<Canvas> ().enabled = true;
         }
-        else if((canvas3.GetComponent<Canvas> ().enabled = true) && (Input.GetButtonDown("tab"))){
+        else if((canvas3.GetComponent<Canvas> ().enabled == true) && (Input.GetButtonDown("tab"))){
             canvas3.GetComponent<Canvas> ().enabled = false;
             canvas4.GetComponent<Canvas> ().enabled = true;
         }
-        else if((canvas4.GetComponent<Canvas> ().enabled = true) && (Input.GetButtonDown("tab"))){
-            canvas4.GetComponent<Canvas> ().enabled = false;
+        else if((canvas4.GetComponent<Canvas> ().enabled == true) && (Input.GetButtonDown("tab"))){
+            //canvas4.GetComponent<Canvas> ().enabled = false;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
