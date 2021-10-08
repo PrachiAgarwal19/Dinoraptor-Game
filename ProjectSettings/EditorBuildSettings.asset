@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Login Page.unity
     guid: 6acdee9d19e467b468af8268e09fed56
   - enabled: 1
+    path: Assets/Scenes/comicStrip.unity
+    guid: 02fbb43add83f8b4d979b7c0cb78f1d3
+  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: a210605a632185347bf60227f0f58443
   - enabled: 1
