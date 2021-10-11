@@ -177,7 +177,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 47b9fbfc4e626fa4b94d68b5aabfe710, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e1b04b80de2b8dd428fd2e7276b01abf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -388,7 +388,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 59, y: -170}
+  m_AnchoredPosition: {x: -38.4, y: -116.2}
   m_SizeDelta: {x: 700, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1118771888
@@ -404,15 +404,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.990566, b: 0.990566, a: 1}
+  m_Color: {r: 0.5943396, g: 0.056069765, b: 0.056069765, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 65ae2d54fcc8a154eac61b9ecf7171d4, type: 3}
-    m_FontSize: 85
+    m_Font: {fileID: 12800000, guid: 311cb93e2c61fbe4bac9fee61d61634f, type: 3}
+    m_FontSize: 78
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -423,7 +423,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Mission Successful
+  m_Text: 'Mission Successful
+
+'
 --- !u!222 &1118771889
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -466,8 +468,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -140, y: 66}
-  m_SizeDelta: {x: 400, y: 100}
+  m_AnchoredPosition: {x: -115.3, y: 12.8}
+  m_SizeDelta: {x: 450, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1465225365
 MonoBehaviour:
@@ -482,28 +484,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.990566, g: 0.9438412, b: 0.9438412, a: 1}
+  m_Color: {r: 0.6792453, g: 0.66002136, b: 0.66002136, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 6e2845b73d5387d4bb60c9a55677c7f3, type: 3}
-    m_FontSize: 12
+    m_Font: {fileID: 12800000, guid: a6fb25c516088a2419ae6de693768fe3, type: 3}
+    m_FontSize: 10
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 40
+    m_MaxSize: 95
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: "With your prodigious coding skills, you helped resolve the Y2K bug, and
-    fixed the time travel space ship. Humans can now travel through a wormhole, and
-    return to civilisation. \nYou have saved the humankind!"
+  m_Text: "With your prodigious coding skills, you helped the dinosaur to have a
+    fulfilling meal and helped prevent a universal catastrophe which could have been
+    caused by human interference with the time balance. \nYou have prevented the
+    downfall nad extinction of life in universe  !"
 --- !u!222 &1465225366
 CanvasRenderer:
   m_ObjectHideFlags: 0

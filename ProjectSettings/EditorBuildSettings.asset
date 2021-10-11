@@ -24,6 +24,6 @@ EditorBuildSettings:
     path: Assets/Scenes/GameOver.unity
     guid: c925f064357b1344d8db289232e6a927
   - enabled: 1
-    path: Assets/Scenes/ChickenDinner.unity
+    path: Assets/Scenes/SuccessOver.unity
     guid: 2f2088fe5c67c104da6340eca66e4530
   m_configObjects: {}
