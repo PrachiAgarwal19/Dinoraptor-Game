@@ -23,19 +23,19 @@ public class ComicStrip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if((canvas1.GetComponent<Canvas> ().enabled == true) && (Input.GetButtonDown("tab"))){
+        if((canvas1.GetComponent<Canvas> ().enabled == true) && (Input.GetButtonDown("space"))){
             canvas1.GetComponent<Canvas> ().enabled = false;
             canvas2.GetComponent<Canvas> ().enabled = true;
         }
-        else if((canvas2.GetComponent<Canvas> ().enabled == true) && (Input.GetButtonDown("tab"))){
+        else if((canvas2.GetComponent<Canvas> ().enabled == true) && (Input.GetButtonDown("space"))){
             canvas2.GetComponent<Canvas> ().enabled = false;
             canvas3.GetComponent<Canvas> ().enabled = true;
         }
-        else if((canvas3.GetComponent<Canvas> ().enabled == true) && (Input.GetButtonDown("tab"))){
+        else if((canvas3.GetComponent<Canvas> ().enabled == true) && (Input.GetButtonDown("space"))){
             canvas3.GetComponent<Canvas> ().enabled = false;
             canvas4.GetComponent<Canvas> ().enabled = true;
         }
-        else if((canvas4.GetComponent<Canvas> ().enabled == true) && (Input.GetButtonDown("tab"))){
+        else if((canvas4.GetComponent<Canvas> ().enabled == true) && (Input.GetButtonDown("space"))){
             //canvas4.GetComponent<Canvas> ().enabled = false;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
