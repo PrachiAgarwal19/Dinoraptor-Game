@@ -26181,8 +26181,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 900709844}
-  m_LocalRotation: {x: 0.049786497, y: -0.0050518983, z: 0.00025183184, w: 0.9987471}
-  m_LocalPosition: {x: 1.4679999, y: 3.4250002, z: -16.3}
+  m_LocalRotation: {x: 0.044239845, y: 0.00062571804, z: -0.000027708802, w: 0.99902076}
+  m_LocalPosition: {x: 1.4679999, y: 3.4250002, z: -18.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1358205507}
@@ -27550,8 +27550,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.049786497, y: -0.0050518983, z: 0.00025183184, w: 0.9987471}
-  m_LocalPosition: {x: 0.20799994, y: 1.9950004, z: -15.679999}
+  m_LocalRotation: {x: 0.044239845, y: 0.00062571804, z: -0.000027708802, w: 0.99902076}
+  m_LocalPosition: {x: 0.20799994, y: 1.9950004, z: -17.679998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2035738674}
@@ -42904,12 +42904,12 @@ MonoBehaviour:
   ShoulderOffset: {x: 0.5, y: -0.4, z: 0}
   VerticalArmLength: 0.4
   CameraSide: 0.708
-  CameraDistance: 16
+  CameraDistance: 18
   CameraCollisionFilter:
     serializedVersion: 2
     m_Bits: 0
   IgnoreTag: 
-  CameraRadius: 0.427
+  CameraRadius: 0.57
 --- !u!114 &1358205509
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -42928,8 +42928,8 @@ MonoBehaviour:
   m_LookaheadIgnoreY: 0
   m_HorizontalDamping: 0.5
   m_VerticalDamping: 0.5
-  m_ScreenX: 0.5
-  m_ScreenY: 0.5
+  m_ScreenX: 0.4914652
+  m_ScreenY: 0.5048486
   m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0
   m_SoftZoneWidth: 0.8

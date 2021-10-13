@@ -503,11 +503,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.5
-  m_Text: "With your prodigious coding skills, you helped the dinosaur tododge the
+  m_Text: "With your prodigious coding skills, you helped the dinosaur to dodge the
     attacks of the ruthless humans and  have a fulfilling meal. You helped prevent
     a universal catastrophe which could have been caused by human interference with
     the time balance. \nYou have prevented the downfall and extinction of life in
-    universe  !"
+    the universe  !"
 --- !u!222 &1465225366
 CanvasRenderer:
   m_ObjectHideFlags: 0
