@@ -185,11 +185,11 @@ MonoBehaviour:
     lowercase incase of words and should not contain any extra spaces or symbols.\n\n\u2022There
     will be 10 lives initially. The player loses a life and a point when they hit
     a stone monster.\n\n\u2022The game ends when the player gets the maximum possible
-    score (i.e. solves all the questions and collects all the gold coins), if the
-    player exits by pressing the quit button, if the player loses all the lives.\n\n"
+    score (i.e. solves all the questions and collects all the gold coins), or if
+    the player exits by pressing the quit button, if the player loses all the lives.\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fc1adb9be9568ed4fbfb819170b10ee3, type: 2}
-  m_sharedMaterial: {fileID: 7792741132285490452, guid: 69a91a81b3983ba40a8cd3804d22bcbc,
+  m_sharedMaterial: {fileID: -8439954397437812560, guid: fc1adb9be9568ed4fbfb819170b10ee3,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -253,7 +253,7 @@ MonoBehaviour:
   m_margin: {x: -212.18802, y: -143.159, z: 28.002884, w: -173.01857}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 1
+  m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &217689504
