@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GoldPickup : MonoBehaviour
 {
@@ -39,7 +40,16 @@ public class GoldPickup : MonoBehaviour
             goldCoinNo++;
             Instantiate(pickupEffect, transform.position, transform.rotation);
             Destroy(gameObject);
+
+            if((goldCoinNo >= 51) && (CanvasInput.countQues >= 15)){
+                StartCoroutine(ChangeScreen());
+            }
         }
+    }
+
+    IEnumerator ChangeScreen(){
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene(5);
     }
 
 }

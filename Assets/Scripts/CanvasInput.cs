@@ -14,7 +14,7 @@ public class CanvasInput : MonoBehaviour
     public GameObject canvas;
     public delegate void ScoreUpdate(int value);
     public static event ScoreUpdate OnUpdate;
-    private static int countQues=0;
+    public static int countQues=0;
     public GameObject incorrectCanvas;
     //public Button tryAgain;
 
@@ -222,7 +222,7 @@ public class CanvasInput : MonoBehaviour
     }
     public void SuccessOver(int count, int coins)
     {
-        if (count== 15 && coins == 51)
+        if ((count >= 15) && (coins >= 51))
         {
             StartCoroutine(ChangeScreens());
 

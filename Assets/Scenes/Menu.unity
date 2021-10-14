@@ -186,7 +186,8 @@ MonoBehaviour:
     will be 10 lives initially. The player loses a life and a point when they hit
     a stone monster.\n\n\u2022The game ends when the player gets the maximum possible
     score (i.e. solves all the questions and collects all the gold coins), or if
-    the player exits by pressing the quit button, if the player loses all the lives.\n\n"
+    the player exits by pressing the quit button, or if the player loses all the
+    lives.\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fc1adb9be9568ed4fbfb819170b10ee3, type: 2}
   m_sharedMaterial: {fileID: -8439954397437812560, guid: fc1adb9be9568ed4fbfb819170b10ee3,
