@@ -215,6 +215,7 @@ public class CanvasInput : MonoBehaviour
             //tryAgainText.enabled=true;
             //canvas.GetComponent<Canvas> ().enabled = false;
             StartCoroutine(GetDisableOnClick(incorrectCanvas));
+            answer.text = "";
             GoldPickup.score -= 10;
             OnUpdate(GoldPickup.score);
         }
