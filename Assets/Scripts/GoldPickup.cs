@@ -9,6 +9,7 @@ public class GoldPickup : MonoBehaviour
     public GameObject pickupEffect;
     public AudioSource CoinSound;
 
+    public static int goldCoinNo = 0;
     public delegate void ScoreUpdate(int value);
     public static event ScoreUpdate OnUpdate;
 
@@ -35,6 +36,7 @@ public class GoldPickup : MonoBehaviour
             score += value;
             Debug.Log(score);
             OnUpdate(score);
+            goldCoinNo++;
             Instantiate(pickupEffect, transform.position, transform.rotation);
             Destroy(gameObject);
         }

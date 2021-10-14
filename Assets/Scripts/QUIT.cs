@@ -7,7 +7,7 @@ public class QUIT : MonoBehaviour
 {
     public void QuitGmae()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(6);
 
     }
 }

@@ -35,7 +35,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(human);
             popupappear.movespeed = 3;
             countQues++;
-            SuccessOver(countQues);
+            SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
          else if (answer.tag == "Question Medium 1" && answer.text == "4")
         {
@@ -47,7 +47,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(human);
             popupappear.movespeed = 3;
             countQues++;
-            SuccessOver(countQues);
+            SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
         else if (answer.tag == "Question Hard 1" && answer.text == "4")
         {
@@ -59,7 +59,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(human);
             popupappear.movespeed = 3;
             countQues++;
-            SuccessOver(countQues);
+            SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
         else if (answer.tag == "Question Easy 2" && answer.text == "4")
         {
@@ -71,7 +71,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(human);
             popupappear.movespeed = 3;
             countQues++;
-            SuccessOver(countQues);
+            SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
         else if (answer.tag == "Question Medium 2" && answer.text == "4")
         {
@@ -83,7 +83,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(human);
             popupappear.movespeed = 3;
             countQues++;
-            SuccessOver(countQues);
+            SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
         else if (answer.tag == "Question Hard 2" && answer.text == "4")
         {
@@ -95,7 +95,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(human);
             popupappear.movespeed = 3;
             countQues++;
-            SuccessOver(countQues);
+            SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
         else if (answer.tag == "Question Easy 3" && answer.text == "4")
         {
@@ -107,7 +107,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(human);
             popupappear.movespeed = 3;
             countQues++;
-            SuccessOver(countQues);
+            SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
         else if (answer.tag == "Question Medium 3" && answer.text == "4")
         {
@@ -119,7 +119,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(human);
             popupappear.movespeed = 3;
             countQues++;
-            SuccessOver(countQues);
+            SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
         else if (answer.tag == "Question Hard 3" && answer.text == "4")
         {
@@ -131,7 +131,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(human);
             popupappear.movespeed = 3;
             countQues++;
-            SuccessOver(countQues);
+            SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
         else if (answer.tag == "Question Easy 4" && answer.text == "4")
         {
@@ -143,7 +143,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(human);
             popupappear.movespeed = 3;
             countQues++;
-            SuccessOver(countQues);
+            SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
         else if (answer.tag == "Question Medium 4" && answer.text == "4")
         {
@@ -155,7 +155,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(human);
             popupappear.movespeed = 3;
             countQues++;
-            SuccessOver(countQues);
+            SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
         else if (answer.tag == "Question Hard 4" && answer.text == "4")
         {
@@ -167,7 +167,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(human);
             popupappear.movespeed = 3;
             countQues++;
-            SuccessOver(countQues);
+            SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
         else if (answer.tag == "Question Easy 5" && answer.text == "4")
         {
@@ -179,7 +179,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(human);
             popupappear.movespeed = 3;
             countQues++;
-            SuccessOver(countQues);
+            SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
         else if (answer.tag == "Question Medium 5" && answer.text == "4")
         {
@@ -191,7 +191,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(human);
             popupappear.movespeed = 3;
             countQues++;
-            SuccessOver(countQues);
+            SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
         else if (answer.tag == "Question Hard 5" && answer.text == "4")
         {
@@ -203,7 +203,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(human);
             popupappear.movespeed = 3;
             countQues++;
-            SuccessOver(countQues);
+            SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
         else{
             //EditorUtility.DisplayDialog("Incorrect Answer","Oops! It is an incorrect answer.", "Try Again");
@@ -219,9 +219,9 @@ public class CanvasInput : MonoBehaviour
             OnUpdate(GoldPickup.score);
         }
     }
-    public void SuccessOver(int count)
+    public void SuccessOver(int count, int coins)
     {
-        if (count== 15)
+        if (count== 15 && coins == 51)
         {
             StartCoroutine(ChangeScreens());
 
@@ -230,7 +230,6 @@ public class CanvasInput : MonoBehaviour
     IEnumerator ChangeScreens()
     {
         yield return new WaitForSeconds(0.5f);
-
         SceneManager.LoadScene(5);
     }
 

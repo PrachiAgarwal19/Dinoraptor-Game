@@ -120,9 +120,9 @@ public class HealthManager : MonoBehaviour
 
     IEnumerator ChangeScreen()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(0.75f);
         isFadeToBlack = false;
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(6);
     }
 
 

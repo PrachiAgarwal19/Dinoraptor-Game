@@ -40,11 +40,6 @@ public class PlayerController : MonoBehaviour
     {   
         
         Vector3 movementDirection = new Vector3(Input.GetAxis("Horizontal"),0, Input.GetAxis("Vertical"));
-     
-
-
-        
-        
 
         if(movementDirection!=Vector3.zero )
         {
