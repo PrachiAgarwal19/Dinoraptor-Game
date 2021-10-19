@@ -36,7 +36,7 @@ public class GoldPickup : MonoBehaviour
             CoinSound.Play();
             score += value;
             Debug.Log(score);
-            OnUpdate(score);
+            //OnUpdate(score);
             goldCoinNo++;
             Instantiate(pickupEffect, transform.position, transform.rotation);
             Destroy(gameObject);
@@ -49,6 +49,7 @@ public class GoldPickup : MonoBehaviour
 
     IEnumerator ChangeScreen(){
         yield return new WaitForSeconds(0.5f);
+        OnUpdate(GoldPickup.score);
         SceneManager.LoadScene(5);
     }
 

@@ -30,7 +30,7 @@ public class CanvasInput : MonoBehaviour
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 50;
-            OnUpdate(GoldPickup.score);
+            //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
             popupappear.movespeed = 3;
@@ -42,7 +42,7 @@ public class CanvasInput : MonoBehaviour
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 60;
-            OnUpdate(GoldPickup.score);
+            //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
             popupappear.movespeed = 3;
@@ -54,7 +54,7 @@ public class CanvasInput : MonoBehaviour
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 70;
-            OnUpdate(GoldPickup.score);
+            //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
             popupappear.movespeed = 3;
@@ -66,7 +66,7 @@ public class CanvasInput : MonoBehaviour
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 50;
-            OnUpdate(GoldPickup.score);
+            //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
             popupappear.movespeed = 3;
@@ -78,7 +78,7 @@ public class CanvasInput : MonoBehaviour
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 60;
-            OnUpdate(GoldPickup.score);
+            //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
             popupappear.movespeed = 3;
@@ -90,7 +90,7 @@ public class CanvasInput : MonoBehaviour
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 70;
-            OnUpdate(GoldPickup.score);
+            //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
             popupappear.movespeed = 3;
@@ -102,7 +102,7 @@ public class CanvasInput : MonoBehaviour
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 50;
-            OnUpdate(GoldPickup.score);
+            //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
             popupappear.movespeed = 3;
@@ -114,7 +114,7 @@ public class CanvasInput : MonoBehaviour
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 60;
-            OnUpdate(GoldPickup.score);
+            //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
             popupappear.movespeed = 3;
@@ -126,7 +126,7 @@ public class CanvasInput : MonoBehaviour
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 70;
-            OnUpdate(GoldPickup.score);
+            //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
             popupappear.movespeed = 3;
@@ -138,7 +138,7 @@ public class CanvasInput : MonoBehaviour
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 50;
-            OnUpdate(GoldPickup.score);
+            //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
             popupappear.movespeed = 3;
@@ -150,7 +150,7 @@ public class CanvasInput : MonoBehaviour
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 60;
-            OnUpdate(GoldPickup.score);
+            //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
             popupappear.movespeed = 3;
@@ -162,7 +162,7 @@ public class CanvasInput : MonoBehaviour
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 70;
-            OnUpdate(GoldPickup.score);
+            //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
             popupappear.movespeed = 3;
@@ -174,7 +174,7 @@ public class CanvasInput : MonoBehaviour
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 50;
-            OnUpdate(GoldPickup.score);
+            //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
             popupappear.movespeed = 3;
@@ -186,7 +186,7 @@ public class CanvasInput : MonoBehaviour
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 60;
-            OnUpdate(GoldPickup.score);
+            //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
             popupappear.movespeed = 3;
@@ -198,7 +198,7 @@ public class CanvasInput : MonoBehaviour
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 70;
-            OnUpdate(GoldPickup.score);
+            //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
             popupappear.movespeed = 3;
@@ -217,7 +217,7 @@ public class CanvasInput : MonoBehaviour
             StartCoroutine(GetDisableOnClick(incorrectCanvas));
             answer.text = "";
             GoldPickup.score -= 10;
-            OnUpdate(GoldPickup.score);
+            //OnUpdate(GoldPickup.score);
         }
     }
     public void SuccessOver(int count, int coins)
@@ -231,6 +231,7 @@ public class CanvasInput : MonoBehaviour
     IEnumerator ChangeScreens()
     {
         yield return new WaitForSeconds(0.5f);
+        OnUpdate(GoldPickup.score);
         SceneManager.LoadScene(5);
     }
 
@@ -249,6 +250,7 @@ public class CanvasInput : MonoBehaviour
     IEnumerator DisableCanvas( GameObject c)
     {
         yield return new WaitForSeconds(1);
+        //OnUpdate(GoldPickup.score);
         c.SetActive(false);
     }
 }

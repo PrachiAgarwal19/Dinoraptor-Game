@@ -30,6 +30,8 @@ public class HealthManager : MonoBehaviour
 
     public Text livesText;
 
+    public delegate void ScoreUpdate(int value);
+    public static event ScoreUpdate OnUpdate;
 
     // Start is called before the first frame update
     void Start()
@@ -88,6 +90,7 @@ public class HealthManager : MonoBehaviour
         if(invincibilityCounter<=0)
         {
             currentHealth -= damage;
+            
             if (currentHealth <= 0)
             {
                 //respawn();
@@ -121,6 +124,7 @@ public class HealthManager : MonoBehaviour
     IEnumerator ChangeScreen()
     {
         yield return new WaitForSeconds(0.75f);
+        OnUpdate(GoldPickup.score);
         isFadeToBlack = false;
         SceneManager.LoadScene(6);
     }

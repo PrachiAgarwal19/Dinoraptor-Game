@@ -10,7 +10,7 @@ public class GameManager1 : MonoBehaviour
     public void Awake()
     {
 
-        HurtPlayer.OnUpdate += ChangeLive;
+        HealthManager.OnUpdate += ChangeLive;
         CanvasInput.OnUpdate += ChangeLive;
     }
 

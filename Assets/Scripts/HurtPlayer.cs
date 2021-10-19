@@ -8,8 +8,8 @@ public class HurtPlayer : MonoBehaviour
    
     
     public AudioSource CollideSound;
-    public delegate void ScoreUpdate(int value);
-    public static event ScoreUpdate OnUpdate;
+    // public delegate void ScoreUpdate(int value);
+    // public static event ScoreUpdate OnUpdate;
 
     // Start is called before the first frame update
     void Start()
@@ -32,7 +32,7 @@ public class HurtPlayer : MonoBehaviour
             GoldPickup.score -= 1;
        
             Debug.Log(GoldPickup.score);
-            OnUpdate(GoldPickup.score);
+            //OnUpdate(GoldPickup.score);
             //OnUpdate(GoldPickup.score);
             
             FindObjectOfType<HealthManager>()
