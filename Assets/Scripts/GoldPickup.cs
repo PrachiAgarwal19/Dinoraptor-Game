@@ -42,6 +42,7 @@ public class GoldPickup : MonoBehaviour
             Destroy(gameObject);
 
             if((goldCoinNo >= 51) && (CanvasInput.countQues >= 15)){
+                OnUpdate(GoldPickup.score);
                 StartCoroutine(ChangeScreen());
             }
         }
@@ -49,7 +50,7 @@ public class GoldPickup : MonoBehaviour
 
     IEnumerator ChangeScreen(){
         yield return new WaitForSeconds(0.5f);
-        OnUpdate(GoldPickup.score);
+        //OnUpdate(GoldPickup.score);
         SceneManager.LoadScene(5);
     }
 

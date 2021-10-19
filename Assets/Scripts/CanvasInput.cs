@@ -224,6 +224,7 @@ public class CanvasInput : MonoBehaviour
     {
         if ((count >= 15) && (coins >= 51))
         {
+            OnUpdate(GoldPickup.score);
             StartCoroutine(ChangeScreens());
 
         }
@@ -231,7 +232,7 @@ public class CanvasInput : MonoBehaviour
     IEnumerator ChangeScreens()
     {
         yield return new WaitForSeconds(0.5f);
-        OnUpdate(GoldPickup.score);
+        //OnUpdate(GoldPickup.score);
         SceneManager.LoadScene(5);
     }
 
