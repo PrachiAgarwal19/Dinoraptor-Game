@@ -17,6 +17,7 @@ public class PlayFabManager : MonoBehaviour
         GoldPickup.OnUpdate += SendLeaderboard;
         HealthManager.OnUpdate += SendLeaderboard;
         CanvasInput.OnUpdate += SendLeaderboard;
+        QUIT.OnUpdate += SendLeaderboard;
     }
 
     public void LoginButton()

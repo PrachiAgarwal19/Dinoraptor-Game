@@ -5,8 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class QUIT : MonoBehaviour
 {
+    public delegate void ScoreUpdate(int value);
+    public static event ScoreUpdate OnUpdate;
     public void QuitGmae()
     {
+        OnUpdate(GoldPickup.score);
         SceneManager.LoadScene(6);
 
     }
