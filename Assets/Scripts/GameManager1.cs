@@ -10,8 +10,8 @@ public class GameManager1 : MonoBehaviour
     public void Awake()
     {
 
-        HealthManager.OnUpdate += ChangeLive;
-        CanvasInput.OnUpdate += ChangeLive;
+        // HealthManager.OnUpdate += ChangeLive;
+        // CanvasInput.OnUpdate += ChangeLive;
     }
 
     // Start is called before the first frame update

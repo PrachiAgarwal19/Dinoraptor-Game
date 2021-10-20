@@ -12,8 +12,8 @@ public class CanvasInput : MonoBehaviour
     public GameObject human;
     public AudioSource killSound;
     public GameObject canvas;
-    public delegate void ScoreUpdate(int value);
-    public static event ScoreUpdate OnUpdate;
+    // public delegate void ScoreUpdate(int value);
+    // public static event ScoreUpdate OnUpdate;
     public static int countQues=0;
     public GameObject incorrectCanvas;
     //public Button tryAgain;
@@ -224,7 +224,7 @@ public class CanvasInput : MonoBehaviour
     {
         if ((count >= 15) && (coins >= 51))
         {
-            OnUpdate(GoldPickup.score);
+            //OnUpdate(GoldPickup.score);
             StartCoroutine(ChangeScreens());
 
         }

@@ -14,10 +14,13 @@ public class PlayFabManager : MonoBehaviour
 
     public void Awake()
     {
-        GoldPickup.OnUpdate += SendLeaderboard;
-        HealthManager.OnUpdate += SendLeaderboard;
-        CanvasInput.OnUpdate += SendLeaderboard;
-        QUIT.OnUpdate += SendLeaderboard;
+        // GoldPickup.OnUpdate += SendLeaderboard;
+        // HealthManager.OnUpdate += SendLeaderboard;
+        // CanvasInput.OnUpdate += SendLeaderboard;
+        // QUIT.OnUpdate += SendLeaderboard;
+
+        GameOver.OnUpdate += SendLeaderboard;
+        Success.OnUpdate += SendLeaderboard;
     }
 
     public void LoginButton()

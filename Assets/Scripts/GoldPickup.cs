@@ -11,8 +11,8 @@ public class GoldPickup : MonoBehaviour
     public AudioSource CoinSound;
 
     public static int goldCoinNo = 0;
-    public delegate void ScoreUpdate(int value);
-    public static event ScoreUpdate OnUpdate;
+    // public delegate void ScoreUpdate(int value);
+    // public static event ScoreUpdate OnUpdate;
 
     // Start is called before the first frame update
     void Start()
@@ -42,7 +42,7 @@ public class GoldPickup : MonoBehaviour
             Destroy(gameObject);
 
             if((goldCoinNo >= 51) && (CanvasInput.countQues >= 15)){
-                OnUpdate(GoldPickup.score);
+                //OnUpdate(GoldPickup.score);
                 StartCoroutine(ChangeScreen());
             }
         }
