@@ -1,7 +1,7 @@
 {
-"companyName": "DefaultCompany",
-"productName": "NewGame",
-"productVersion": "0.1",
+"companyName": "Innerve",
+"productName": "Dinoraptor",
+"productVersion": "1",
 "dataUrl": "Build.data.unityweb",
 "wasmCodeUrl": "Build.wasm.code.unityweb",
 "wasmFrameworkUrl": "Build.wasm.framework.unityweb",
