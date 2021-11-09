@@ -27,6 +27,7 @@ public class CanvasInput : MonoBehaviour
     public void GetInputOnClickHandler(){
         Debug.Log("Input : " + answer.text);
         if(answer.tag == "Question Easy 1" && answer.text == "4"){
+            Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 50;
@@ -39,6 +40,7 @@ public class CanvasInput : MonoBehaviour
         }
          else if (answer.tag == "Question Medium 1" && answer.text == "4")
         {
+            Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 60;
@@ -51,6 +53,7 @@ public class CanvasInput : MonoBehaviour
         }
         else if (answer.tag == "Question Hard 1" && answer.text == "4")
         {
+            Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 70;
@@ -60,9 +63,11 @@ public class CanvasInput : MonoBehaviour
             popupappear.movespeed = 3;
             countQues++;
             SuccessOver(countQues, GoldPickup.goldCoinNo);
+            
         }
         else if (answer.tag == "Question Easy 2" && answer.text == "4")
         {
+            Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 50;
@@ -75,6 +80,7 @@ public class CanvasInput : MonoBehaviour
         }
         else if (answer.tag == "Question Medium 2" && answer.text == "4")
         {
+            Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 60;
@@ -87,6 +93,7 @@ public class CanvasInput : MonoBehaviour
         }
         else if (answer.tag == "Question Hard 2" && answer.text == "4")
         {
+            Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 70;
@@ -99,6 +106,7 @@ public class CanvasInput : MonoBehaviour
         }
         else if (answer.tag == "Question Easy 3" && answer.text == "4")
         {
+            Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 50;
@@ -111,6 +119,7 @@ public class CanvasInput : MonoBehaviour
         }
         else if (answer.tag == "Question Medium 3" && answer.text == "4")
         {
+            Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 60;
@@ -123,6 +132,7 @@ public class CanvasInput : MonoBehaviour
         }
         else if (answer.tag == "Question Hard 3" && answer.text == "4")
         {
+            Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 70;
@@ -135,6 +145,7 @@ public class CanvasInput : MonoBehaviour
         }
         else if (answer.tag == "Question Easy 4" && answer.text == "4")
         {
+            Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 50;
@@ -147,6 +158,7 @@ public class CanvasInput : MonoBehaviour
         }
         else if (answer.tag == "Question Medium 4" && answer.text == "4")
         {
+            Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 60;
@@ -159,6 +171,7 @@ public class CanvasInput : MonoBehaviour
         }
         else if (answer.tag == "Question Hard 4" && answer.text == "4")
         {
+            Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 70;
@@ -171,6 +184,7 @@ public class CanvasInput : MonoBehaviour
         }
         else if (answer.tag == "Question Easy 5" && answer.text == "4")
         {
+            Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 50;
@@ -183,6 +197,7 @@ public class CanvasInput : MonoBehaviour
         }
         else if (answer.tag == "Question Medium 5" && answer.text == "4")
         {
+            Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 60;
@@ -195,6 +210,7 @@ public class CanvasInput : MonoBehaviour
         }
         else if (answer.tag == "Question Hard 5" && answer.text == "4")
         {
+            Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
             GoldPickup.score += 70;
