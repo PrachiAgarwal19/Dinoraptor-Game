@@ -126,6 +126,7 @@ public class HealthManager : MonoBehaviour
         yield return new WaitForSeconds(0.75f);
         //OnUpdate(GoldPickup.score);
         isFadeToBlack = false;
+        Debug.Log("Game Over");
         SceneManager.LoadScene(6);
     }
 

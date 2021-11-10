@@ -24,6 +24,7 @@ public class popupappear : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            //GameObject.Find("Player").GetComponent<PlayerController> ().enabled = false;
            _popupapper.enabled = true;
            InputBox.ActivateInputField();
            Question.GetComponent<Canvas> ().enabled = true;
