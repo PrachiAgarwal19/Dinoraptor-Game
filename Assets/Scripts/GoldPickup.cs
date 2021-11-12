@@ -41,7 +41,7 @@ public class GoldPickup : MonoBehaviour
             Instantiate(pickupEffect, transform.position, transform.rotation);
             Destroy(gameObject);
 
-            if((goldCoinNo >= 51) && (CanvasInput.countQues >= 15)){
+            if((goldCoinNo >= 54) && (CanvasInput.countQues >= 15)){
                 //OnUpdate(GoldPickup.score);
                 StartCoroutine(ChangeScreen());
             }

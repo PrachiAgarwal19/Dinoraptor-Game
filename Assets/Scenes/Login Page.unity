@@ -1646,7 +1646,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1481495162
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2048,7 +2048,7 @@ MonoBehaviour:
   messageText: {fileID: 1110436089}
   emailInput: {fileID: 287360302}
   passwordInput: {fileID: 1159974987}
-  isDone: 0
+  ans: 0
 --- !u!114 &1829889464
 MonoBehaviour:
   m_ObjectHideFlags: 0

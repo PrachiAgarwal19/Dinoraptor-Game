@@ -31,7 +31,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
-            GoldPickup.score += 50;
+            GoldPickup.score += 40;
             //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
@@ -59,7 +59,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
-            GoldPickup.score += 70;
+            GoldPickup.score += 80;
             //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
@@ -74,7 +74,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
-            GoldPickup.score += 50;
+            GoldPickup.score += 40;
             //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
@@ -102,7 +102,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
-            GoldPickup.score += 70;
+            GoldPickup.score += 80;
             //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
@@ -116,7 +116,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
-            GoldPickup.score += 50;
+            GoldPickup.score += 40;
             //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
@@ -144,7 +144,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
-            GoldPickup.score += 70;
+            GoldPickup.score += 80;
             //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
@@ -158,7 +158,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
-            GoldPickup.score += 50;
+            GoldPickup.score += 40;
             //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
@@ -186,7 +186,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
-            GoldPickup.score += 70;
+            GoldPickup.score += 80;
             //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
@@ -200,7 +200,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
-            GoldPickup.score += 50;
+            GoldPickup.score += 40;
             //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
@@ -228,7 +228,7 @@ public class CanvasInput : MonoBehaviour
             Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
-            GoldPickup.score += 70;
+            GoldPickup.score += 80;
             //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
@@ -237,24 +237,16 @@ public class CanvasInput : MonoBehaviour
             SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
         else{
-            //GameObject.Find("Player").GetComponent<PlayerController> ().enabled = true;
-            //EditorUtility.DisplayDialog("Incorrect Answer","Oops! It is an incorrect answer.", "Try Again");
             incorrectCanvas.GetComponent<Canvas> ().enabled = true;
-
-            //canvas.GetComponent<Canvas> ().enabled = false;
-            //incorrectCanvas.SetActive(true);
-            //tryAgain.onClick.AddListener(GetDisableOnClick);
-            //tryAgainText.enabled=true;
-            //canvas.GetComponent<Canvas> ().enabled = false;
             StartCoroutine(GetDisableOnClick(incorrectCanvas));
             answer.text = "";
-            GoldPickup.score -= 10;
+            GoldPickup.score -= 5;
             //OnUpdate(GoldPickup.score);
         }
     }
     public void SuccessOver(int count, int coins)
     {
-        if ((count >= 15) && (coins >= 51))
+        if ((count >= 15) && (coins >= 54))
         {
             //OnUpdate(GoldPickup.score);
             StartCoroutine(ChangeScreens());
