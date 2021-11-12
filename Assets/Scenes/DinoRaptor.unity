@@ -4192,9 +4192,9 @@ MonoBehaviour:
     jewels: the most valuable one. The dino can only choose one day and prevent the
     humans from stealing any jewels on that day; the humans can steal jewels on subsequent
     days in the same way.\r\nThe dino wants to maximise the sum of values of the
-    jewels the humans have not stolen during these M days. Can you help him?\r\n
-    \r\nInput Format:\nThe first line of each test case contains two space-separated
-    integers N and M.\r\nThe second line contains N space-separated integers P1,P2,\u2026,PN.\r\nM
+    jewels the humans have not stolen during these M days. Can you help him?\r\n\r\nInput
+    Format:\nThe first line of each test case contains two space-separated integers
+    N and M.\r\nThe second line contains N space-separated integers P1,P2,\u2026,PN.\r\nM
     lines follow. For each i (1\u2264i\u2264M), the i-th of these lines contains
     two space-separated integers Li and Ri.\r\n\nExample:\nInput:\n4 4\r\n1 2 4 3\r\n1
     3\r\n3 4\r\n1 2\r\n2 3\r\nOutput:\n4"
@@ -8285,10 +8285,10 @@ RectTransform:
   m_Father: {fileID: 1219845428}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.80000305, y: -10.1}
-  m_SizeDelta: {x: -10, y: -29.8}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -7}
+  m_SizeDelta: {x: 100, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &222620197
 MonoBehaviour:
@@ -8311,9 +8311,9 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 14
     m_FontStyle: 1
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 4
@@ -9063,21 +9063,21 @@ MonoBehaviour:
     of humans that he must eat in each round(x) and the total sum of their powers(y).
     Return the sum of the product of x and y found in each round.
 
-    
 
-    Input
-    Format:
 
-    The first line of the input contains N, the number of humans.
+    Input Format:
 
     The
-    second line contains an array of N numbers denoting the power of each human
+    first line of the input contains N, the number of humans.
 
-    This
-    third line contains Q, which denotes the number of rounds.
+    The second line
+    contains an array of N numbers denoting the power of each human
 
-    Q lines follow,
-    each line having one number denoting the power of dino.
+    This third
+    line contains Q, which denotes the number of rounds.
+
+    Q lines follow, each
+    line having one number denoting the power of dino.
 
 
     Example
@@ -9561,7 +9561,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -80}
+  m_AnchoredPosition: {x: 0, y: -100}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &262136959
@@ -19563,8 +19563,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 23}
-  m_SizeDelta: {x: 550, y: 200}
+  m_AnchoredPosition: {x: 0, y: 10}
+  m_SizeDelta: {x: 550, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &621911227
 GameObject:
@@ -25587,8 +25587,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.79999924, y: -10.1}
-  m_SizeDelta: {x: -10, y: -29.8}
+  m_AnchoredPosition: {x: 0, y: -6.42}
+  m_SizeDelta: {x: 0, y: -12.84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &798117740
 MonoBehaviour:
@@ -25611,7 +25611,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
+    m_FontSize: 14
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
@@ -40092,8 +40092,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -93, y: -123}
-  m_SizeDelta: {x: 250, y: 30}
+  m_AnchoredPosition: {x: -100, y: -125}
+  m_SizeDelta: {x: 150, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1219845429
 MonoBehaviour:
@@ -48320,8 +48320,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 93, y: -123}
-  m_SizeDelta: {x: 100, y: 30}
+  m_AnchoredPosition: {x: 50, y: -125}
+  m_SizeDelta: {x: 50, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1457763322
 MonoBehaviour:
