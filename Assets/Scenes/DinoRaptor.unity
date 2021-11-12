@@ -7132,10 +7132,10 @@ MonoBehaviour:
     them to every other group of humans.\r\nNow they need your help to calculate
     the amount of rope they must need to execute the escape plan properly, given
     the coordinates of the groups and their respective population, in order to outsmart
-    them\r\n \r\nInput;\r\nThe first line indicates the number of groups (N). \r\nThe
-    second line indicates the coordinates of the N groups.\r\nThe third line contains
-    the population of each group of humans. The coordinates of the groups needn't
-    be in increasing order in the input.\r\n \r\nFor example, given the following
+    them\r\n \r\nInput Format:\nThe first line indicates the number of groups (N).
+    \r\nThe second line indicates the coordinates of the N groups.\r\nThe third line
+    contains the population of each group of humans. The coordinates of the groups
+    needn't be in increasing order in the input.\r\n \r\nFor example, given the following
     case,\r\n3\r\n715 97 157\r\n716 9032 8121\r\nOutput:\n10655214\n3 groups of humans
     require 3 sets of ropes to connect them. Between group 1 and 2 , which has a
     population of  716 and 9032, respectively, at least  716 ropes should come out
@@ -19265,7 +19265,7 @@ MonoBehaviour:
     intervals such that they do not overlap with each other.\r\nEveryone has given
     their preferred time interval, and now you have to compute the maximum length
     of the set of time intervals (given as preference to guard the cave) that could
-    be formed such that the shifts do not overlap.\r\n\nInput Format\r\nA 2D matrix
+    be formed such that the shifts do not overlap.\r\n\nInput Format\r:\nA 2D matrix
     M of size H x 2 with each row representing a shift start and end time preference
     given by the H humans in the cave.\r\n\r\nExample\nInput:\r\n A = [\r[1, 4]\r,
     [2, 3]\r, [4, 6]\r, [8, 9]\r]\r\nOutput:\r\n 3\r"
@@ -29073,7 +29073,7 @@ MonoBehaviour:
     number of rows and columns. \r\nThe second line contains R * C integers corresponding
     to the row-wise numbers in the 2D array\r\n\nExample\nInput:\r\nA = [[0, 30]\r,
     [5, 10]\r, [15, 20]\r]\r\nOutput:\r\n2\r\n\nFind the output of the following
-    input."
+    input"
 --- !u!222 &970094791
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -49758,7 +49758,7 @@ MonoBehaviour:
     so that the Dino breaks it and makes it difficult to travel.
 
 
-    Input format
+    Input format:
 
     The
     first line contains two numbers N and K denoting the length of the side of the
@@ -59427,11 +59427,11 @@ MonoBehaviour:
     dragon fruit. Then, the player moves any number of dragon fruits from tree k
     to tree k\u22121. The dino who moves last wins the game.Your task is to find
     out who wins the game when both dinos play optimally.\r\nNote that if there are
-    no possible moves at all, the second dino wins.\r\n\r\nInput\r\nThe first line
-    contains an integer n: the number of trees.\r\nThe next line has n integers p1,p2,\u2026,pn:
-    the initial number of dragon fruits on each tree.\r\nOutput\r\nFor the answer,
-    type \"first\" if the first dino wins the game and \"second\" if the second dino
-    wins the game\r\n\r\nExample\r\n\rInput:\r\n\r4\r\n1 1 1 1\r\n\r\nOutput:\r\nsecond\r\n\nFind
+    no possible moves at all, the second dino wins.\r\n\r\nInput\r Format:\nThe first
+    line contains an integer n: the number of trees.\r\nThe next line has n integers
+    p1,p2,\u2026,pn: the initial number of dragon fruits on each tree.\r\nOutput\r\nFor
+    the answer, type \"first\" if the first dino wins the game and \"second\" if
+    the second dino wins the game\r\n\r\nExample\r\n\rInput:\r\n\r4\r\n1 1 1 1\r\n\r\nOutput:\r\nsecond\r\n\nFind
     the correct output of the following input:\n15\r\n2 5 3 3 4 1 0 4 3 5 2 1 4 3
     5\r"
 --- !u!222 &1821732456
