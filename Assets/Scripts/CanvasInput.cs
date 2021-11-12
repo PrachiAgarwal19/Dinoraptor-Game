@@ -26,7 +26,7 @@ public class CanvasInput : MonoBehaviour
 
     public void GetInputOnClickHandler(){
         Debug.Log("Input : " + answer.text);
-        if(answer.tag == "Question Easy 1" && answer.text == "4"){
+        if(answer.tag == "Question Easy 1" && answer.text == "23"){
             //GameObject.Find("Player").GetComponent<PlayerController> ().enabled = true;
             Destroy(btnClick);
             killSound.Play();
@@ -39,13 +39,13 @@ public class CanvasInput : MonoBehaviour
             countQues++;
             SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
-         else if (answer.tag == "Question Medium 1" && answer.text == "4")
+         else if (answer.tag == "Question Medium 1" && answer.text == "first")
         {
             //GameObject.Find("Player").GetComponent<PlayerController> ().enabled = true;
             Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
-            GoldPickup.score += 60;
+            GoldPickup.score += 40;
             //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
@@ -53,13 +53,13 @@ public class CanvasInput : MonoBehaviour
             countQues++;
             SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
-        else if (answer.tag == "Question Hard 1" && answer.text == "4")
+        else if (answer.tag == "Question Hard 1" && answer.text == "5")
         {
             //GameObject.Find("Player").GetComponent<PlayerController> ().enabled = true;
             Destroy(btnClick);
             killSound.Play();
             Debug.Log("correct answer");
-            GoldPickup.score += 80;
+            GoldPickup.score += 60;
             //OnUpdate(GoldPickup.score);
             StartCoroutine(DisableCanvas(canvas));
             Destroy(human);
@@ -68,7 +68,7 @@ public class CanvasInput : MonoBehaviour
             SuccessOver(countQues, GoldPickup.goldCoinNo);
             
         }
-        else if (answer.tag == "Question Easy 2" && answer.text == "4")
+        else if (answer.tag == "Question Easy 2" && answer.text == "1")
         {
             //GameObject.Find("Player").GetComponent<PlayerController> ().enabled = true;
             Destroy(btnClick);
@@ -82,7 +82,7 @@ public class CanvasInput : MonoBehaviour
             countQues++;
             SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
-        else if (answer.tag == "Question Medium 2" && answer.text == "4")
+        else if (answer.tag == "Question Medium 2" && answer.text == "34")
         {
             //GameObject.Find("Player").GetComponent<PlayerController> ().enabled = true;
             Destroy(btnClick);
@@ -96,7 +96,49 @@ public class CanvasInput : MonoBehaviour
             countQues++;
             SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
-        else if (answer.tag == "Question Hard 2" && answer.text == "4")
+        else if (answer.tag == "Question Hard 2" && answer.text == "pass")
+        {
+            //GameObject.Find("Player").GetComponent<PlayerController> ().enabled = true;
+            Destroy(btnClick);
+            killSound.Play();
+            Debug.Log("correct answer");
+            GoldPickup.score += 60;
+            //OnUpdate(GoldPickup.score);
+            StartCoroutine(DisableCanvas(canvas));
+            Destroy(human);
+            popupappear.movespeed = 3;
+            countQues++;
+            SuccessOver(countQues, GoldPickup.goldCoinNo);
+        }
+        else if (answer.tag == "Question Easy 3" && answer.text == "18")
+        {
+            //GameObject.Find("Player").GetComponent<PlayerController> ().enabled = true;
+            Destroy(btnClick);
+            killSound.Play();
+            Debug.Log("correct answer");
+            GoldPickup.score += 40;
+            //OnUpdate(GoldPickup.score);
+            StartCoroutine(DisableCanvas(canvas));
+            Destroy(human);
+            popupappear.movespeed = 3;
+            countQues++;
+            SuccessOver(countQues, GoldPickup.goldCoinNo);
+        }
+        else if (answer.tag == "Question Medium 3" && answer.text == "3761")
+        {
+            //GameObject.Find("Player").GetComponent<PlayerController> ().enabled = true;
+            Destroy(btnClick);
+            killSound.Play();
+            Debug.Log("correct answer");
+            GoldPickup.score += 60;
+            //OnUpdate(GoldPickup.score);
+            StartCoroutine(DisableCanvas(canvas));
+            Destroy(human);
+            popupappear.movespeed = 3;
+            countQues++;
+            SuccessOver(countQues, GoldPickup.goldCoinNo);
+        }
+        else if (answer.tag == "Question Hard 3" && answer.text == "7")
         {
             //GameObject.Find("Player").GetComponent<PlayerController> ().enabled = true;
             Destroy(btnClick);
@@ -110,7 +152,7 @@ public class CanvasInput : MonoBehaviour
             countQues++;
             SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
-        else if (answer.tag == "Question Easy 3" && answer.text == "4")
+        else if (answer.tag == "Question Easy 4" && answer.text == "2")
         {
             //GameObject.Find("Player").GetComponent<PlayerController> ().enabled = true;
             Destroy(btnClick);
@@ -124,7 +166,7 @@ public class CanvasInput : MonoBehaviour
             countQues++;
             SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
-        else if (answer.tag == "Question Medium 3" && answer.text == "4")
+        else if (answer.tag == "Question Medium 4" && answer.text == "4522")
         {
             //GameObject.Find("Player").GetComponent<PlayerController> ().enabled = true;
             Destroy(btnClick);
@@ -138,7 +180,7 @@ public class CanvasInput : MonoBehaviour
             countQues++;
             SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
-        else if (answer.tag == "Question Hard 3" && answer.text == "4")
+        else if (answer.tag == "Question Hard 4" && answer.text == "90")
         {
             //GameObject.Find("Player").GetComponent<PlayerController> ().enabled = true;
             Destroy(btnClick);
@@ -152,7 +194,7 @@ public class CanvasInput : MonoBehaviour
             countQues++;
             SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
-        else if (answer.tag == "Question Easy 4" && answer.text == "4")
+        else if (answer.tag == "Question Easy 5" && answer.text == "28")
         {
             //GameObject.Find("Player").GetComponent<PlayerController> ().enabled = true;
             Destroy(btnClick);
@@ -166,7 +208,7 @@ public class CanvasInput : MonoBehaviour
             countQues++;
             SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
-        else if (answer.tag == "Question Medium 4" && answer.text == "4")
+        else if (answer.tag == "Question Medium 5" && answer.text == "1327231")
         {
             //GameObject.Find("Player").GetComponent<PlayerController> ().enabled = true;
             Destroy(btnClick);
@@ -180,49 +222,7 @@ public class CanvasInput : MonoBehaviour
             countQues++;
             SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
-        else if (answer.tag == "Question Hard 4" && answer.text == "4")
-        {
-            //GameObject.Find("Player").GetComponent<PlayerController> ().enabled = true;
-            Destroy(btnClick);
-            killSound.Play();
-            Debug.Log("correct answer");
-            GoldPickup.score += 80;
-            //OnUpdate(GoldPickup.score);
-            StartCoroutine(DisableCanvas(canvas));
-            Destroy(human);
-            popupappear.movespeed = 3;
-            countQues++;
-            SuccessOver(countQues, GoldPickup.goldCoinNo);
-        }
-        else if (answer.tag == "Question Easy 5" && answer.text == "4")
-        {
-            //GameObject.Find("Player").GetComponent<PlayerController> ().enabled = true;
-            Destroy(btnClick);
-            killSound.Play();
-            Debug.Log("correct answer");
-            GoldPickup.score += 40;
-            //OnUpdate(GoldPickup.score);
-            StartCoroutine(DisableCanvas(canvas));
-            Destroy(human);
-            popupappear.movespeed = 3;
-            countQues++;
-            SuccessOver(countQues, GoldPickup.goldCoinNo);
-        }
-        else if (answer.tag == "Question Medium 5" && answer.text == "4")
-        {
-            //GameObject.Find("Player").GetComponent<PlayerController> ().enabled = true;
-            Destroy(btnClick);
-            killSound.Play();
-            Debug.Log("correct answer");
-            GoldPickup.score += 60;
-            //OnUpdate(GoldPickup.score);
-            StartCoroutine(DisableCanvas(canvas));
-            Destroy(human);
-            popupappear.movespeed = 3;
-            countQues++;
-            SuccessOver(countQues, GoldPickup.goldCoinNo);
-        }
-        else if (answer.tag == "Question Hard 5" && answer.text == "4")
+        else if (answer.tag == "Question Hard 5" && answer.text == "447526079")
         {
             //GameObject.Find("Player").GetComponent<PlayerController> ().enabled = true;
             Destroy(btnClick);
