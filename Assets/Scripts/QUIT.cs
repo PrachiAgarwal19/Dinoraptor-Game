@@ -10,6 +10,11 @@ public class QUIT : MonoBehaviour
     public void QuitGmae()
     {
         //OnUpdate(GoldPickup.score);
-        SceneManager.LoadScene(6);
+        if(CanvasInput.countQues == 15){
+            SceneManager.LoadScene(5);
+        }
+        else{
+            SceneManager.LoadScene(6);
+        }
     }
 }
