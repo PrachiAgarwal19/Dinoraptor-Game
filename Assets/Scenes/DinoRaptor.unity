@@ -1197,247 +1197,6 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 6cc513001c84c714baa94b6d24a332c4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab9be37bf134f2d419e7325e85453dbd, type: 3}
---- !u!1 &36899033
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 36899034}
-  - component: {fileID: 36899039}
-  - component: {fileID: 36899038}
-  - component: {fileID: 36899037}
-  - component: {fileID: 36899036}
-  - component: {fileID: 36899035}
-  m_Layer: 5
-  m_Name: TestCase
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &36899034
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36899033}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 310030913}
-  m_Father: {fileID: 1988012138}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -93.00006, y: -123}
-  m_SizeDelta: {x: 250, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &36899035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36899033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8be26fd4f9578834ea79ae5131baa517, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  url: www.google.com
---- !u!82 &36899036
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36899033}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9e608fe0e9fba6d4a9c3077b23663357, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &36899037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36899033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 36899038}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 36899035}
-        m_MethodName: Open
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &36899038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36899033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.40310097, g: 0.5849056, b: 0.38074046, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &36899039
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36899033}
-  m_CullTransparentMesh: 0
 --- !u!1001 &37615722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4414,7 +4173,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -4423,7 +4182,22 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2+2
+  m_Text: "The dino is protecting a treasure. The treasure contains N jewels (numbered
+    1 through N); for each valid i, the i-th jewel has value Pi. The values of all
+    jewels are pairwise distinct. Unfortunately the humans are trying to steal the
+    treasure. The humans have planned to steal the treasure of jewels during M days
+    (numbered 1 through M). For each valid i, on the i-th day, consider all jewels
+    with numbers between Li and Ri (inclusive) which the humans have not yet stolen.
+    If there is at least one such jewel, the humans decide to steal one of these
+    jewels: the most valuable one. The dino can only choose one day and prevent the
+    humans from stealing any jewels on that day; the humans can steal jewels on subsequent
+    days in the same way.\r\nThe dino wants to maximise the sum of values of the
+    jewels the humans have not stolen during these M days. Can you help him?\r\n
+    \r\nInput Format:\nThe first line of each test case contains two space-separated
+    integers N and M.\r\nThe second line contains N space-separated integers P1,P2,\u2026,PN.\r\nM
+    lines follow. For each i (1\u2264i\u2264M), the i-th of these lines contains
+    two space-separated integers Li and Ri.\r\n\nExample:\nInput:\n4 4\r\n1 2 4 3\r\n1
+    3\r\n3 4\r\n1 2\r\n2 3\r\nOutput:\n4"
 --- !u!222 &105024571
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5872,7 +5646,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -5881,7 +5655,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2+2
+  m_Text: "Dinosaurs went extinct about 65 million years ago. The dino has lived
+    for a certain amount of years which is represented by an integer X. You will
+    be given the age of one dino(X) and You must find the age of another dino(Y)
+    such that Y \u2265 X and Y is a number divisible by One and itself and is equal
+    to its reverse.\r\n\nInput\r\nA single integer X\r\n\nFor example, Let's say
+    one dino has lived for 94500 years so, the age of the other dino will be 94649
+    years.\r\n\r\nFind the age of the second dino for the given age of the first
+    dino.\n1318131"
 --- !u!222 &136266329
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6865,7 +6646,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be26fd4f9578834ea79ae5131baa517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: www.google.com
+  url: https://docs.google.com/document/d/1Mo-ySNfii4LH0_Pe4ziHzG8zVOMvpoqFT_4avjoOIgQ/edit?usp=sharing
 --- !u!82 &176516781
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7573,7 +7354,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -7582,7 +7363,29 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2+2
+  m_Text: "Dino city is a place along the bank of the river, where humans have been
+    captured by dinosaurs and these humans have been divided into groups. All groups
+    of humans live along the river bank which is a straight line. Thus every group's
+    position can be defined by a single coordinate, i.e., the distance from the start
+    point of the river. Consider all groups of humans to be single points.\r\nUnfortunately,
+    the dino wants to kill them, and the humans must prepare a plan to escape, such
+    that if there are N humans in a group, there must be N number of ropes to connect
+    them to every other group of humans.\r\nNow they need your help to calculate
+    the amount of rope they must need to execute the escape plan properly, given
+    the coordinates of the groups and their respective population, in order to outsmart
+    them\r\n \r\nInput;\r\nThe first line indicates the number of groups (N). \r\nThe
+    second line indicates the coordinates of the N groups.\r\nThe third line contains
+    the population of each group of humans. The coordinates of the groups needn't
+    be in increasing order in the input.\r\n \r\nFor example, given the following
+    case,\r\n3\r\n715 97 157\r\n716 9032 8121\r\n3 groups of humans require 3 sets
+    of ropes to connect them. Between group 1 and 2 , which has a population of 
+    716 and 9032, respectively, at least  716 ropes should come out of group 1, and
+    at least 9032 ropes should come out of group 2 for this connection. Thus, the
+    connection between groups 1 and 2 will require 9032 ropes, each crossing a distance
+    of (715 - 97) = 618km. Applying this logic to groups 2,3 and 1,3, we have\r\n[1,2]
+    =>9032  connections x 618km = 5581776 km of rope\r\n [2,3]=>9032  connections
+    x 60km = 541920 km of rope\r\n [3,1]=>8121  connections  x 558km = 4531518km
+    of rope,\r\nOutput is  10655214 km of cable\r"
 --- !u!222 &193511163
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7977,247 +7780,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4118b9a4314f5940ab0dbe7342b4146, type: 3}
---- !u!1 &207620093
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 207620094}
-  - component: {fileID: 207620099}
-  - component: {fileID: 207620098}
-  - component: {fileID: 207620097}
-  - component: {fileID: 207620096}
-  - component: {fileID: 207620095}
-  m_Layer: 5
-  m_Name: TestCase
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &207620094
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 207620093}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 979616883}
-  m_Father: {fileID: 1561978225}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -93.00006, y: -123}
-  m_SizeDelta: {x: 250, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &207620095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 207620093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8be26fd4f9578834ea79ae5131baa517, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  url: www.google.com
---- !u!82 &207620096
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 207620093}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9e608fe0e9fba6d4a9c3077b23663357, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &207620097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 207620093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 207620098}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 207620095}
-        m_MethodName: Open
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &207620098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 207620093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.40310097, g: 0.5849056, b: 0.38074046, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &207620099
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 207620093}
-  m_CullTransparentMesh: 0
 --- !u!1 &209797753 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1445918223798424, guid: c1325fa2bd1c15245a71ba8ebc3659f3,
@@ -8348,7 +7910,7 @@ RectTransform:
   - {fileID: 2041747619}
   - {fileID: 1022223884}
   m_Father: {fileID: 1561978225}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -9482,7 +9044,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -9491,7 +9053,53 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2+2
+  m_Text: 'In a world where the humans have gathered to fight against the dino, it
+    must protect itself by killing humans. N humans have gathered with different
+    powers. There will be Q rounds to fight and in each round, the power of the dino
+    will also be varied. With power M,the dino can kill all the soldiers whose power
+    is less than or equal to M(<=M). After each round, All the humans who died in
+    the previous round will be reborn. Such that in each round there will be N humans
+    to fight against. As the dino is weak in mathematics, help him to count the number
+    of humans that he must eat in each round(x) and the total sum of their powers(y).
+    Return the sum of the product of x and y found in each round.
+
+    
+
+    Input
+    Format:
+
+    The first line of the input contains N, the number of humans.
+
+    The
+    second line contains an array of N numbers denoting the power of each human
+
+    This
+    third line contains Q, which denotes the number of rounds.
+
+    Q lines follow,
+    each line having one number denoting the power of dino.
+
+
+    Example
+
+    Input:
+
+    7
+
+    1
+    2 3 4 5 6 7
+
+    3
+
+    3
+
+    10
+
+    2
+
+    Output:
+
+    220'
 --- !u!222 &247090968
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10660,86 +10268,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &310030912
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 310030913}
-  - component: {fileID: 310030915}
-  - component: {fileID: 310030914}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &310030913
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 310030912}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 36899034}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.80000305, y: -10.1}
-  m_SizeDelta: {x: -10, y: -29.8}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &310030914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 310030912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.9716981, g: 0.9533642, b: 0.9533642, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
-    m_FontStyle: 1
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: 'Click to view test case
-
-'
---- !u!222 &310030915
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 310030912}
-  m_CullTransparentMesh: 0
 --- !u!1 &310069793
 GameObject:
   m_ObjectHideFlags: 0
@@ -15387,7 +14915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be26fd4f9578834ea79ae5131baa517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: www.google.com
+  url: https://docs.google.com/document/d/11eqGDFNQ8N4zgFrtVX8ofI1Er3v1tyT0B1U88OBQ5zE/edit
 --- !u!82 &454723207
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15644,247 +15172,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 462744151}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &462844268
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 462844269}
-  - component: {fileID: 462844274}
-  - component: {fileID: 462844273}
-  - component: {fileID: 462844272}
-  - component: {fileID: 462844271}
-  - component: {fileID: 462844270}
-  m_Layer: 5
-  m_Name: TestCase
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &462844269
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 462844268}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 872597410}
-  m_Father: {fileID: 1990421686}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -93.00006, y: -123}
-  m_SizeDelta: {x: 250, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &462844270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 462844268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8be26fd4f9578834ea79ae5131baa517, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  url: www.google.com
---- !u!82 &462844271
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 462844268}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9e608fe0e9fba6d4a9c3077b23663357, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &462844272
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 462844268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 462844273}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 462844270}
-        m_MethodName: Open
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &462844273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 462844268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.40310097, g: 0.5849056, b: 0.38074046, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &462844274
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 462844268}
-  m_CullTransparentMesh: 0
 --- !u!1001 &468656388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23271,7 +22558,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -23280,7 +22567,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2+2
+  m_Text: "Famous scientist, Amar Dabar, has successfully plotted stone monsters
+    in the area. Find the largest rectangular boundary where the Dino can move without
+    hurting itself.\r\n\nInput Format\r:\nThe first line contains two space-separated
+    integers , the grid rows and columns.\r\nEach of the next  lines contains characters
+    each describing the state of the land. 'x' if it is a stone monster and '.' otherwise.\r\n\nExample:\nInput:\r\n4
+    5\r\n.....\r\n.x.x.\r\n.....\r\n.....\r\nOutput:\n5\r\n\nFind the sum of the
+    digits of output of the input\r"
 --- !u!222 &720341921
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23847,7 +23140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be26fd4f9578834ea79ae5131baa517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: www.google.com
+  url: https://docs.google.com/document/d/1Mo-ySNfii4LH0_Pe4ziHzG8zVOMvpoqFT_4avjoOIgQ/edit?usp=sharing
 --- !u!82 &737007829
 AudioSource:
   m_ObjectHideFlags: 0
@@ -24088,7 +23381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be26fd4f9578834ea79ae5131baa517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: www.google.com
+  url: https://docs.google.com/document/d/1zJn0-J-_L9EAN3lxRsfMqPEabFvDc1lWnceCUM0XiAo/edit?usp=sharing
 --- !u!82 &737385127
 AudioSource:
   m_ObjectHideFlags: 0
@@ -25792,7 +25085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be26fd4f9578834ea79ae5131baa517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: www.google.com
+  url: https://docs.google.com/document/d/15CwpmnUgajBGUTF-oaNdCrwBF2nH3KxIQVSFib-X27w/edit?usp=sharing
 --- !u!82 &783082711
 AudioSource:
   m_ObjectHideFlags: 0
@@ -26564,7 +25857,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -26573,7 +25866,16 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2+2
+  m_Text: "There is a small cave, where a mother dinosaur lives. Consider a number
+    N which represents the number of baby dinosaurs it can hold, and a sequence of
+    letters representing the entry/exit of baby dinosaurs. Find the total number
+    of baby dinosaurs who could not spend time with the mother dinosaur present in
+    the cave. \r\n\r\nInput Format:\r\nFirst line of input contains a string. The
+    first occurrence of a letter in the given string indicates the entry and the
+    second occurrence indicates the exit of a baby dinosaur. A baby dinosaur cannot
+    enter the cave, when the cave capacity is full.\r\nThe next line contains the
+    capacity of the cave\r\n\r\nExample\r\nsequence = \u201CIABCDSDUCEF\u201D\r\ncapacity
+    = 5\r\nOutput:\r\n2\r"
 --- !u!222 &812800540
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -27876,86 +27178,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e6e60fbde48eded45af1306d1a2cc222, type: 3}
---- !u!1 &872597409
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 872597410}
-  - component: {fileID: 872597412}
-  - component: {fileID: 872597411}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &872597410
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872597409}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 462844269}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.80000305, y: -10.1}
-  m_SizeDelta: {x: -10, y: -29.8}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &872597411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872597409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.9716981, g: 0.9533642, b: 0.9533642, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
-    m_FontStyle: 1
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: 'Click to view test case
-
-'
---- !u!222 &872597412
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872597409}
-  m_CullTransparentMesh: 0
 --- !u!4 &880476718 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400004, guid: e6e60fbde48eded45af1306d1a2cc222,
@@ -29071,7 +28293,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -29080,7 +28302,15 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2+2
+  m_Text: "There are N stone monsters along a circular path, where the amount of
+    fuel at monster i is A[i]. The human has a cart and it costs B[i] to move from
+    [i] to [i+1]. The human begins its journey at one of the monsters.  Return the
+    minimum starting monster's index if the human can travel around the path once,
+    otherwise return -1. Humans can only travel in one direction. i to i+1, i+2,
+    \u2026 n-1, 0, 1, 2.. Completing the circuit means starting at i and\r\nending
+    up at i again.\r\n\nInput Format\r\nThe first argument given is the integer array
+    A.\r\nThe second argument given is the integer array B.\r\n\nExample\nInput:\r\n  
+    2 5 3 1 4\r\n   2 2 4 2 1\r\nOutput:\r\n    0\r"
 --- !u!222 &930618636
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -30094,7 +29324,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -30103,7 +29333,16 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2+2
+  m_Text: "There are many dinosaurs in the region. But not all can live in a cave
+    at once. Consider a matrix M of size N x 2 denoting time intervals between which
+    a dino cave is occupied with a group of  dinosaurs.\r\nWhere:\r\nM[i][0] =time
+    at which a group of dinosaurs enter the  ith cave.\r\nM[i][1] =time at which
+    a group of dinosaurs exit the  ith cave.\r\n \r\nFind the minimum number of caves
+    required so that all groups of dinosaurs can live peacefully.\r\n \r\nInput Format:\nThere
+    are 2  lines in the input\r\nLine 1 contains2 integers R, C which denote the
+    number of rows and columns. \r\nThe second line contains R * C integers corresponding
+    to the row-wise numbers in the 2D array\r\n\nExample\nInput:\r\nA = [[0, 30]\r,
+    [5, 10]\r, [15, 20]\r]\r\nOutput:\r\n2\r"
 --- !u!222 &970094791
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -30456,86 +29695,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 979321530}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &979616882
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 979616883}
-  - component: {fileID: 979616885}
-  - component: {fileID: 979616884}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &979616883
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 979616882}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 207620094}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.80000305, y: -10.1}
-  m_SizeDelta: {x: -10, y: -29.8}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &979616884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 979616882}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.9716981, g: 0.9533642, b: 0.9533642, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
-    m_FontStyle: 1
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: 'Click to view test case
-
-'
---- !u!222 &979616885
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 979616882}
-  m_CullTransparentMesh: 0
 --- !u!1001 &980778255
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35897,7 +35056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be26fd4f9578834ea79ae5131baa517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: www.google.com
+  url: https://docs.google.com/document/d/1tjj88kDF0YDBgZr-ylQupmo0UjrgIld1z6GL5mnynqs/edit?usp=sharing
 --- !u!82 &1060243850
 AudioSource:
   m_ObjectHideFlags: 0
@@ -37856,7 +37015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be26fd4f9578834ea79ae5131baa517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: www.google.com
+  url: https://docs.google.com/document/d/19Q4PPgIguQR-kOkw_bii45_f9CJRKSRB8V7qURdn-XU/edit?usp=sharing
 --- !u!82 &1126366071
 AudioSource:
   m_ObjectHideFlags: 0
@@ -40948,7 +40107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be26fd4f9578834ea79ae5131baa517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: www.google.com
+  url: https://docs.google.com/document/d/1KuYw7fuOp0JDpE_XcNfNc1jQ1Dz4tkDxVBskxuAlwQ0/edit?usp=sharing
 --- !u!82 &1219845430
 AudioSource:
   m_ObjectHideFlags: 0
@@ -41339,7 +40498,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 93, y: -123}
+  m_AnchoredPosition: {x: 0, y: -123}
   m_SizeDelta: {x: 100, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1224530420
@@ -43368,7 +42527,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 93, y: -123}
+  m_AnchoredPosition: {x: 0, y: -123}
   m_SizeDelta: {x: 100, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1290112253
@@ -45234,7 +44393,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -45243,7 +44402,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2+2
+  m_Text: "Dylan wants to assess whether Cheryl could be recruited into Team Skyhigh.
+    He told her to design and draw a map of roads so that anybody who travels on
+    the road from any point will take a minimum of k units of time to reach the final
+    point. After this Cheryl creates some roads in the form of connected undirected
+    graphs along with the nodes. Each node of the graph represents a point where
+    two or more roads are connected to one another and the edges between the nodes
+    represent the units of time taken to travel between those nodes.\r\nBut unfortunately,
+    Cheryl could not figure out a method to find what will be the minimum time taken
+    by a person to start and reach at the end of the road given that he can only
+    start and stop on the road from specific starting and ending nodes. Can you please
+    help Cheryl evaluate if her road passes Dylan\u2019s criteria or not?\r\nIf the
+    minimum time taken by a person to start and stop on the road is more than or
+    equal to K then print in a single line \"PASS\" else print \"FAIL\".\r\n\nExample:\nInput:\n2
+    4 1 1\n1 2 3\n1 3 4\n3 4 4\n4 5 5\nOutput:\npass\n\nFind the output of the following\n4
+    6 3 3\r\n1 3 4\r\n1 2 4\r\n2 3 3\r\n2 4 4\r"
 --- !u!222 &1332765572
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -45574,7 +44747,6 @@ RectTransform:
   - {fileID: 1539777718}
   - {fileID: 1332765570}
   - {fileID: 358232734}
-  - {fileID: 1738547255}
   m_Father: {fileID: 1917365834}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -47235,7 +46407,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -47244,7 +46416,17 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2+2
+  m_Text: "What is the worst case time complexity of the following code:\r\nint M[101][101];\r\nint
+    MinPath(vector<vector<int> >& vec, int row, int col) {\r\n  int Rsize = vec.size();\r\n 
+    int Csize = vec[0].size();\r\n  if (row >= Rsize || col >= Csize) return 100000000;
+    // Infinity\r\n  if (row == Rsize - 1 && col == Csize - 1) return 0;\r\n  if
+    (M[row][col] != -1) return M[row][col];\r\n  M[row][col] =  vec[row][col] + min(MinPath(vec,
+    row + 1, col), MinPath(vec, row, col + 1));\r\n  return M[row][col];\r\n}\r\n\r\nCallsite
+    : \r\nmemset(M, -1, sizeof(M));\r\nMinPath(vec, 0, 0);\r\n \r\nAssume Rsize =
+    vec.size() and Csize = vec[0].size() and vec has positive elements\r\n\nSelect
+    and type the correct option from the following::\r\n1. O(2^(Rsize + Csize))\r\n2.
+    O(Rsize*Csize)\r\n3. O(Rsize + Csize)\r\n4. O(Rsize*Rsize + Csize*Csize)\r\n5.
+    O(Rsize*Csize*log(Rsize*Csize))\r"
 --- !u!222 &1411361881
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -48827,7 +48009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be26fd4f9578834ea79ae5131baa517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: www.google.com
+  url: https://docs.google.com/document/d/1PTf_FfxscD6zOyiQ-QYc17I6Uqh5bBdwmTkt42uUavk/edit?usp=sharing
 --- !u!82 &1450059606
 AudioSource:
   m_ObjectHideFlags: 0
@@ -50907,7 +50089,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -50916,7 +50098,43 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2+2
+  m_Text: 'The humans have developed coordinate system of N X N land where the lower
+    left and upper right corners have (0,0)and (N,N)coordinates.They have decided
+    to build 2 pathways which is perpendicular to each other and parallel to the
+    coordinate axes.There are K hills each at the point with integer coordinates.The
+    distance from the hills to the pathways will be the distance from the hill to
+    the nearest one. The humans have decided to place the pathways such that the
+    maximum distance from the hills to the path way is the minimum possible.Your
+    task is to find the optimal distance from the farthest hill to the nearest pathway
+    so that the Dino breaks it and makes it difficult to travel.
+
+
+    Input format
+
+    The
+    first line contains two numbers N and K denoting the length of the side of the
+    square and the number of hills respectively.
+
+    The next K lines contain two
+    numbers denoting the coordinates of hills (from 0 to N).
+
+
+    Example
+
+    Input:
+
+    4
+    3
+
+    1 1
+
+    2 2
+
+    3 3
+
+    Ouput:
+
+    1'
 --- !u!222 &1524536319
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -51998,7 +51216,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -52007,7 +51225,34 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2+2
+  m_Text: "Suppose there are n mother dinosaurs in the forest of eternity (numbered
+    1 through n). Each mother dinosaur lives in one of n trees, which are located
+    in a single forest trail and numbered 1 through n in the order from left to right.
+    Suppose we are denoting the fire power of the i-th mother dinosaur by di. The
+    mother dinosaurs are protecting their babies from the monster stones . There
+    are many monster stones who are trying to eat them. So the mother dinosaurs hid
+    their eggs under the trees. \r\nSuppose we denote the tree that  the mother dinosaur
+    chose to hide her eggs by F and the strength of the mother dinosaur inhabiting
+    the i-th tree by Xi. Now the stone monster will start his journey near some tree
+    V and move straight towards tree F, fighting the mother dinosaur near all the
+    trees between V and F (both inclusive). The stone monster initially has strength
+    P; by defeating the mother dinosaur the stone monster gains strength X. If the
+    stone monster\u2019s strength becomes negative at any time, then the stone monster
+    will die. The mother dinosaur does not know the tree which the stone monster
+    will choose to start from. Hence, the mother dinosaurs wants to assign the trees
+    to the father dinosaurs in such a way that the number of trees the monster stone
+    can start from and die while going to the eggs (possibly after defeating all
+    the mother dinosaurs) is maximum possible.Could you help  the mother dinosaur
+    calculate this number for each possible choice of  F?\r\nConsider a single line
+    containing N space-separated integers. For each valid i, the i-th of these integers
+    should denote the number of starting trees for the stone monster such that the
+    stone monster dies if the eggs are hidden under the i-th tree. Return the sum
+    of these N integers.\r\n\nInput Format\nThe first line of each test case contains
+    two space-separated integers N and P denoting the number of father dinosaurs
+    and the strength of the monster stones and the second line contains N space-separated
+    integers S1,S2,\u2026,SNS1,S2,\u2026,SN denoting the strengths of the father
+    dinosaurs.\r\n\nExample:\nInput:\r\n3 4\r\n2 1 2\r\nOutput:\r\n2 1 2\r\n \r\nFind
+    the output of the following input:\n10 15\r\n2 7 8 5 9 4 6 7 6 2\r\n"
 --- !u!222 &1553978433
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -52095,10 +51340,10 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1738547255}
   - {fileID: 1821716927}
   - {fileID: 1991992324}
   - {fileID: 212476738}
-  - {fileID: 207620094}
   m_Father: {fileID: 2085324314}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -53203,7 +52448,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be26fd4f9578834ea79ae5131baa517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: www.google.com
+  url: https://docs.google.com/document/d/1fSxz9YZe2KInv06JV0qgxfJ76sg71AwVeImf_DJMpGI/edit?usp=sharing
 --- !u!82 &1597904846
 AudioSource:
   m_ObjectHideFlags: 0
@@ -56577,86 +55822,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.5, z: 0.5}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1712122710
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1712122711}
-  - component: {fileID: 1712122713}
-  - component: {fileID: 1712122712}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1712122711
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1712122710}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1725537440}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.80000305, y: -10.1}
-  m_SizeDelta: {x: -10, y: -29.8}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1712122712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1712122710}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.9716981, g: 0.9533642, b: 0.9533642, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 20
-    m_FontStyle: 1
-    m_BestFit: 0
-    m_MinSize: 0
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 1
-    m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: 'Click to view test case
-
-'
---- !u!222 &1712122713
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1712122710}
-  m_CullTransparentMesh: 0
 --- !u!1001 &1718144132
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57062,247 +56227,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1303fd13f88225042865a0a372afe3e3, type: 3}
---- !u!1 &1725537439
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1725537440}
-  - component: {fileID: 1725537445}
-  - component: {fileID: 1725537444}
-  - component: {fileID: 1725537443}
-  - component: {fileID: 1725537442}
-  - component: {fileID: 1725537441}
-  m_Layer: 5
-  m_Name: TestCase
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1725537440
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1725537439}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1712122711}
-  m_Father: {fileID: 1795110842}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -93.00006, y: -123}
-  m_SizeDelta: {x: 250, y: 30}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1725537441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1725537439}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8be26fd4f9578834ea79ae5131baa517, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  url: www.google.com
---- !u!82 &1725537442
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1725537439}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9e608fe0e9fba6d4a9c3077b23663357, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &1725537443
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1725537439}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1725537444}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1725537441}
-        m_MethodName: Open
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1725537444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1725537439}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.40310097, g: 0.5849056, b: 0.38074046, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1725537445
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1725537439}
-  m_CullTransparentMesh: 0
 --- !u!4 &1728923654 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400004, guid: e6e60fbde48eded45af1306d1a2cc222,
@@ -57596,8 +56520,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1599120013}
-  m_Father: {fileID: 1339182469}
-  m_RootOrder: 3
+  m_Father: {fileID: 1561978225}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -57616,7 +56540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be26fd4f9578834ea79ae5131baa517, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  url: www.google.com
+  url: 
 --- !u!82 &1738547257
 AudioSource:
   m_ObjectHideFlags: 0
@@ -59626,7 +58550,6 @@ RectTransform:
   - {fileID: 1791809382}
   - {fileID: 1553978431}
   - {fileID: 1864337877}
-  - {fileID: 1725537440}
   m_Father: {fileID: 1770938943}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -60568,11 +59491,11 @@ RectTransform:
   m_Children:
   - {fileID: 1448560403}
   m_Father: {fileID: 1561978225}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 93, y: -123}
+  m_AnchoredPosition: {x: 0, y: -123}
   m_SizeDelta: {x: 100, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1821716928
@@ -60840,7 +59763,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -60849,7 +59772,19 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2+2
+  m_Text: "There is a forest consisting of n trees, numbered 1,2,\u2026,n. Initially,
+    each tree has some number of dragon fruits.There are two dinos who move alternately.
+    On each move, a dino chooses a tree k where k\u22601 and it has at least one
+    dragon fruit. Then, the player moves any number of dragon fruits from tree k
+    to tree k\u22121. The dino who moves last wins the game.Your task is to find
+    out who wins the game when both dinos play optimally.\r\nNote that if there are
+    no possible moves at all, the second dino wins.\r\n\r\nInput\r\nThe first line
+    contains an integer n: the number of trees.\r\nThe next line has n integers p1,p2,\u2026,pn:
+    the initial number of dragon fruits on each tree.\r\nOutput\r\nFor the answer,
+    type \"first\" if the first dino wins the game and \"second\" if the second dino
+    wins the game\r\n\r\nExample\r\n\rInput:\r\n\r4\r\n1 1 1 1\r\n\r\nOutput:\r\nsecond\r\n\nFind
+    the correct output of the following input:\n15\r\n2 5 3 3 4 1 0 4 3 5 2 1 4 3
+    5\r"
 --- !u!222 &1821732456
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -65504,7 +64439,6 @@ RectTransform:
   - {fileID: 1224530419}
   - {fileID: 1411361879}
   - {fileID: 930462065}
-  - {fileID: 36899034}
   m_Father: {fileID: 1606329767}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -65705,7 +64639,6 @@ RectTransform:
   - {fileID: 1290112252}
   - {fileID: 1821732454}
   - {fileID: 1185567605}
-  - {fileID: 462844269}
   m_Father: {fileID: 1040623932}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -65781,7 +64714,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1561978225}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -65811,7 +64744,7 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 14
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
     m_Alignment: 0
@@ -65820,7 +64753,29 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2+2
+  m_Text: "Adratiklit is a province that has been set up by humans as a temporary
+    settlement after they ended up in the Mesozoic era due to the glitch in the time
+    machine due to the Y2K bug. It is a province with N villages (marked 1 through
+    N). You can assume that the map of Adratiklit is a tree with N vertices corresponding
+    to the villages, rooted at the village number 1. The hantavirus has spread far
+    and wide across the province and human civilization in Adratiklit is severely
+    infected and endangered because of this.\r\nThe province rulers are trying to
+    defeat this virus. Their scholars have made a remedy which can be used to cure
+    parts of the province. We know that there is an integer k with the following
+    meaning: for each village v, if we give the remedy to people in this village,
+    then this village and all villages in its subtree such that their distance from
+    v is at most k are cured. When a village is cured, it is cured forever and never
+    becomes infected again.\r\nThis procedure has to be repeated one or more times
+    to cure the whole tree.\r\nSuppose when we give remedy to people in one village,
+    we need to spend one unit of the remedy potion. Now, for each possible k, the
+    province rulers want to know the minimum number of units of remedy potion that
+    need to be produced in order to cure all villages, and they told the smartest
+    group of scholars, medicinal practitioners in the province to solve this critical
+    problem.\r\nFor each possible value of k (1\u2264k\u2264N), let's denote the
+    minimum required number of units of remedy potion by ak. Can you find S=E^1_0=\\sum_0^{\\infty}\\triangle
+    (pi_3-2^4)  ?\r\n\nInput Format:\r\nThe first line of each test case contains
+    a single integer N.Each of the next N\u22121 lines contains two space-separated
+    integers u and v denoting that villages u and v are connected by an edge.\r\n"
 --- !u!222 &1991992326
 CanvasRenderer:
   m_ObjectHideFlags: 0
