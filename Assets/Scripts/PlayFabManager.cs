@@ -1,16 +1,20 @@
 ﻿using System.Collections.Generic;
-using UnityEngine;
 using PlayFab;
 using PlayFab.ClientModels;
-using UnityEngine.UI;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayFabManager : MonoBehaviour
 {
     public Text messageText;
+
     public InputField emailInput;
+
     public InputField passwordInput;
-    public bool isDone = false;
+
+    //public bool isDone = false;
+    public int ans;
 
     public void Awake()
     {
@@ -18,55 +22,72 @@ public class PlayFabManager : MonoBehaviour
         // HealthManager.OnUpdate += SendLeaderboard;
         // CanvasInput.OnUpdate += SendLeaderboard;
         // QUIT.OnUpdate += SendLeaderboard;
-
         GameOver.OnUpdate += SendLeaderboard;
         Success.OnUpdate += SendLeaderboard;
     }
 
     public void LoginButton()
     {
-        var request = new LoginWithEmailAddressRequest
-        {
-            Email = emailInput.text,
-            Password = passwordInput.text
-        };
-        PlayFabClientAPI.LoginWithEmailAddress(request, OnLoginSuccess, OnError);
-        
+        var request =
+            new LoginWithEmailAddressRequest {
+                Email = emailInput.text,
+                Password = passwordInput.text
+            };
+        PlayFabClientAPI.LoginWithEmailAddress (
+            request,
+            OnLoginSuccess,
+            OnError
+        );
     }
 
-    
-
     void OnLoginSuccess(LoginResult result)
-    {
-        if(isDone == true || emailInput.text == "hello@gmail.com") {
-            messageText.text = "Logged In";
-            //Change Scene
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            isDone = false;
+    {        
+        GetStatistics();
+    }
 
+    void GetStatistics()
+    {
+        PlayFabClientAPI.GetPlayerStatistics(new GetPlayerStatisticsRequest(),OnGetStatistics,error => Debug.LogError(error.GenerateErrorReport()));
+    }
+
+    void OnGetStatistics(GetPlayerStatisticsResult result)
+    {
+        Debug.Log("Received the following Statistics:");
+        // foreach (var eachStat in result.Statistics){
+        //     Debug.Log("Statistic (" +eachStat.StatisticName +"): " +eachStat.Value);
+        //     ans = eachStat.Value;
+        //     Debug.Log(ans);
+        // }
+        if(result.Statistics[0].Value != 0){
+            messageText.text = "You've already played";
         }
         else
         {
-            messageText.text = "You've already played";
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            messageText.text = "Logged In";
         }
-        
-        
     }
+
     public void RegisterButton()
     {
-        var request = new RegisterPlayFabUserRequest
-        {
-            Email = emailInput.text,
-            Password = passwordInput.text,
-            RequireBothUsernameAndEmail = false
-        };
-        PlayFabClientAPI.RegisterPlayFabUser(request, OnRegisterSuccess, OnError);
+        var request =
+            new RegisterPlayFabUserRequest {
+                Email = emailInput.text,
+                Password = passwordInput.text,
+                RequireBothUsernameAndEmail = false
+            };
+        PlayFabClientAPI.RegisterPlayFabUser (
+            request,
+            OnRegisterSuccess,
+            OnError
+        );
     }
-    
+
     void OnRegisterSuccess(RegisterPlayFabUserResult result)
     {
         messageText.text = "Registered and logged in!";
-        isDone = true;
+        SendLeaderboard(0);
+        //isDone = true;
     }
 
     void OnError(PlayFabError error)
@@ -74,25 +95,28 @@ public class PlayFabManager : MonoBehaviour
         messageText.text = error.ErrorMessage;
     }
 
-    public void SendLeaderboard( int score )
+    public void SendLeaderboard(int score)
     {
-        Debug.Log(score);
-        var request = new UpdatePlayerStatisticsRequest
-        {
-            Statistics = new List<StatisticUpdate>
-            {
-                new StatisticUpdate
-                {
-                    StatisticName = "Score",
-                    Value = score
-                }
-            }
-        };
-        PlayFabClientAPI.UpdatePlayerStatistics(request, OnLeaderboardUpdate, OnError);
+        Debug.Log (score);
+        var request =
+            new UpdatePlayerStatisticsRequest {
+                Statistics =
+                    new List<StatisticUpdate> {
+                        new StatisticUpdate {
+                            StatisticName = "Score",
+                            Value = score
+                        }
+                    }
+            };
+        PlayFabClientAPI.UpdatePlayerStatistics (
+            request,
+            OnLeaderboardUpdate,
+            OnError
+        );
     }
 
     void OnLeaderboardUpdate(UpdatePlayerStatisticsResult result)
     {
-        Debug.Log(result);
+        Debug.Log (result);
     }
 }
