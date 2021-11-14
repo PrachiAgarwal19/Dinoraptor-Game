@@ -180,14 +180,13 @@ MonoBehaviour:
   m_text: "\u2022 The dinosaur can be moved by the arrow keys and can be made to
     jump by pressing the spacebar key.\n\n\u2022There are 15 coding questions of
     varying difficulties that can be accessed by colliding with humans. Easy questions
-    are worth 50 points, medium worth 60 and difficult worth 70 points. The player
-    loses 10 poins for every incorrect answer.\n\n\u2022 The answer should be all
+    are worth 40 points, medium worth 60 and difficult worth 80 points. The player
+    loses 5 poins for every incorrect answer.\n\n\u2022 The answer should be all
     lowercase incase of words and should not contain any extra spaces or symbols.\n\n\u2022There
     will be 10 lives initially. The player loses a life and a point when they hit
-    a stone monster.\n\n\u2022The game ends when the player gets the maximum possible
-    score (i.e. solves all the questions and collects all the gold coins), or if
-    the player exits by pressing the quit button, or if the player loses all the
-    lives.\n\n"
+    a stone monster.\n\n\u2022The game ends if the player exits by pressing the quit
+    button, or if the player loses all the lives. Therefore, press the quit button
+    before closing the tab to ensure successful submission."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: fc1adb9be9568ed4fbfb819170b10ee3, type: 2}
   m_sharedMaterial: {fileID: -8439954397437812560, guid: fc1adb9be9568ed4fbfb819170b10ee3,

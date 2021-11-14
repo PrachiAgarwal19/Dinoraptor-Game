@@ -2807,7 +2807,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4184716620995200, guid: 543ba2233306d00479ef5713d436c12e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -93.03
+      value: -101.77
       objectReference: {fileID: 0}
     - target: {fileID: 4184716620995200, guid: 543ba2233306d00479ef5713d436c12e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2815,7 +2815,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4184716620995200, guid: 543ba2233306d00479ef5713d436c12e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -94.38
+      value: -108.88
       objectReference: {fileID: 0}
     - target: {fileID: 4184716620995200, guid: 543ba2233306d00479ef5713d436c12e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -50898,9 +50898,9 @@ MonoBehaviour:
     two space-separated integers N and P denoting the number of father dinosaurs
     and the strength of the monster stones and the second line contains N space-separated
     integers S1,S2,\u2026,SNS1,S2,\u2026,SN denoting the strengths of the father
-    dinosaurs.\r\n\nExample:\nInput:\r\t\t\tOutput:\n3 4\t\r\t\t\t5 ( 2 + 1 + 2 )
-    \n2 1 2\r\n \r\nFind the output of the following input:\n10 15\r\n2 7 8 5 9 4
-    6 7 6 2\r"
+    dinosaurs.\r\n\nExample:\nInput:\r\t\t\tOutput:\n3 4\t\r\t\t\t5 (2 + 1 + 2) \n2
+    1 2\r\n \r\nFind the output of the following input:\n10 15\r\n2 7 8 5 9 4 6 7
+    6 2\r"
 --- !u!222 &1553978433
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -53333,7 +53333,7 @@ PrefabInstance:
     - target: {fileID: 255050918166699076, guid: d13fdec2f49da29499a474c4d47cd848,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -55.6
+      value: -40.86
       objectReference: {fileID: 0}
     - target: {fileID: 255050918166699076, guid: d13fdec2f49da29499a474c4d47cd848,
         type: 3}
