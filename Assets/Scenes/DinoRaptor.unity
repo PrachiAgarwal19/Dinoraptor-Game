@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.50154734, g: 0.2701565, b: 0.21010906, a: 1}
+  m_IndirectSpecularColor: {r: 0.45918524, g: 0.2519813, b: 0.20342788, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -939,6 +939,7 @@ MonoBehaviour:
   answer: {fileID: 586524502}
   human: {fileID: 1799732925}
   killSound: {fileID: 29572048}
+  incorrectsound: {fileID: 29572050}
   canvas: {fileID: 674838909}
   incorrectCanvas: {fileID: 1445932187}
 --- !u!82 &29572050
@@ -4154,6 +4155,7 @@ MonoBehaviour:
   answer: {fileID: 1789928776}
   human: {fileID: 1859872562}
   killSound: {fileID: 98987658}
+  incorrectsound: {fileID: 98987660}
   canvas: {fileID: 1259325443}
   incorrectCanvas: {fileID: 1445932187}
 --- !u!82 &98987660
@@ -5435,6 +5437,7 @@ MonoBehaviour:
   answer: {fileID: 1530473768}
   human: {fileID: 2143794405}
   killSound: {fileID: 123832780}
+  incorrectsound: {fileID: 123832782}
   canvas: {fileID: 51803503}
   incorrectCanvas: {fileID: 1445932187}
 --- !u!82 &123832782
@@ -19690,6 +19693,7 @@ MonoBehaviour:
   answer: {fileID: 1435966391}
   human: {fileID: 952482196}
   killSound: {fileID: 620589928}
+  incorrectsound: {fileID: 620589930}
   canvas: {fileID: 609941401}
   incorrectCanvas: {fileID: 1445932187}
 --- !u!82 &620589930
@@ -21059,6 +21063,7 @@ MonoBehaviour:
   answer: {fileID: 1089074223}
   human: {fileID: 1448192727}
   killSound: {fileID: 657474138}
+  incorrectsound: {fileID: 657474140}
   canvas: {fileID: 518301907}
   incorrectCanvas: {fileID: 1445932187}
 --- !u!82 &657474140
@@ -29258,6 +29263,7 @@ MonoBehaviour:
   answer: {fileID: 1748998347}
   human: {fileID: 1681441183}
   killSound: {fileID: 953507647}
+  incorrectsound: {fileID: 953507649}
   canvas: {fileID: 1153636101}
   incorrectCanvas: {fileID: 1445932187}
 --- !u!82 &953507649
@@ -41228,6 +41234,7 @@ MonoBehaviour:
   answer: {fileID: 930462066}
   human: {fileID: 346707770}
   killSound: {fileID: 1224530423}
+  incorrectsound: {fileID: 1224530425}
   canvas: {fileID: 1606329763}
   incorrectCanvas: {fileID: 1445932187}
 --- !u!82 &1224530425
@@ -43258,6 +43265,7 @@ MonoBehaviour:
   answer: {fileID: 1185567606}
   human: {fileID: 1842543680}
   killSound: {fileID: 1290112257}
+  incorrectsound: {fileID: 1290112258}
   canvas: {fileID: 1040623928}
   incorrectCanvas: {fileID: 1445932187}
 --- !u!82 &1290112257
@@ -49244,6 +49252,7 @@ MonoBehaviour:
   answer: {fileID: 262136959}
   human: {fileID: 1051656836}
   killSound: {fileID: 1457763325}
+  incorrectsound: {fileID: 1457763327}
   canvas: {fileID: 1228089636}
   incorrectCanvas: {fileID: 1445932187}
 --- !u!82 &1457763327
@@ -51492,6 +51501,7 @@ MonoBehaviour:
   answer: {fileID: 358232735}
   human: {fileID: 2043330301}
   killSound: {fileID: 1539777722}
+  incorrectsound: {fileID: 1539777724}
   canvas: {fileID: 1917365830}
   incorrectCanvas: {fileID: 1445932187}
 --- !u!82 &1539777724
@@ -54558,6 +54568,7 @@ MonoBehaviour:
   answer: {fileID: 1568884397}
   human: {fileID: 569537433}
   killSound: {fileID: 1623637840}
+  incorrectsound: {fileID: 1623637842}
   canvas: {fileID: 1751437296}
   incorrectCanvas: {fileID: 1445932187}
 --- !u!82 &1623637842
@@ -59456,6 +59467,7 @@ MonoBehaviour:
   answer: {fileID: 1864337878}
   human: {fileID: 1847985506}
   killSound: {fileID: 1791809386}
+  incorrectsound: {fileID: 1791809388}
   canvas: {fileID: 1770938939}
   incorrectCanvas: {fileID: 1445932187}
 --- !u!82 &1791809388
@@ -60901,6 +60913,7 @@ MonoBehaviour:
   answer: {fileID: 212476739}
   human: {fileID: 598670214}
   killSound: {fileID: 1821716931}
+  incorrectsound: {fileID: 1821716933}
   canvas: {fileID: 2085324310}
   incorrectCanvas: {fileID: 1445932187}
 --- !u!82 &1821716933
@@ -66042,6 +66055,7 @@ MonoBehaviour:
   answer: {fileID: 453843719}
   human: {fileID: 59472706}
   killSound: {fileID: 1984978710}
+  incorrectsound: {fileID: 1984978712}
   canvas: {fileID: 1191592825}
   incorrectCanvas: {fileID: 1445932187}
 --- !u!82 &1984978712
@@ -66919,6 +66933,7 @@ MonoBehaviour:
   answer: {fileID: 77600877}
   human: {fileID: 1532914621}
   killSound: {fileID: 2002153552}
+  incorrectsound: {fileID: 2002153554}
   canvas: {fileID: 2067536451}
   incorrectCanvas: {fileID: 1445932187}
 --- !u!82 &2002153554

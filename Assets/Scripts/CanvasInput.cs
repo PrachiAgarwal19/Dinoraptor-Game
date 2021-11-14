@@ -11,6 +11,7 @@ public class CanvasInput : MonoBehaviour
     public InputField answer;
     public GameObject human;
     public AudioSource killSound;
+    public AudioSource incorrectsound;
     public GameObject canvas;
     // public delegate void ScoreUpdate(int value);
     // public static event ScoreUpdate OnUpdate;
@@ -242,6 +243,7 @@ public class CanvasInput : MonoBehaviour
             if(!Input.GetKey(KeyCode.Space))
             {
                 GoldPickup.score -= 5;
+                incorrectsound.Play();
             }
             answer.text = "";
            
