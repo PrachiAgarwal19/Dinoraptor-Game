@@ -19,12 +19,14 @@ public class CanvasInput : MonoBehaviour
     //public Button tryAgain;
 
     //public Text tryAgainText;
+    bool negative = true;
 
     private void Start(){
         btnClick.onClick.AddListener(GetInputOnClickHandler);
     }
 
     public void GetInputOnClickHandler(){
+        
         Debug.Log("Input : " + answer.text);
         if(answer.tag == "Question Easy 1" && answer.text == "23"){
             //GameObject.Find("Player").GetComponent<PlayerController> ().enabled = true;
@@ -237,12 +239,23 @@ public class CanvasInput : MonoBehaviour
             SuccessOver(countQues, GoldPickup.goldCoinNo);
         }
         else{
-            incorrectCanvas.GetComponent<Canvas> ().enabled = true;
-            StartCoroutine(GetDisableOnClick(incorrectCanvas));
+            if(!Input.GetKey(KeyCode.Space))
+            {
+                GoldPickup.score -= 5;
+            }
             answer.text = "";
-            GoldPickup.score -= 5;
-            //OnUpdate(GoldPickup.score);
+           
+            Debug.Log("Negative");
+            canvas.GetComponent<Canvas>().enabled = false;
+           /* incorrectCanvas.GetComponent<Canvas> ().enabled = true;
+            CallEnumerator();
+           */ //OnUpdate(GoldPickup.score);
         }
+    }
+
+    void CallEnumerator()
+    {
+        StartCoroutine(GetDisableOnClick(incorrectCanvas));
     }
     public void SuccessOver(int count, int coins)
     {
